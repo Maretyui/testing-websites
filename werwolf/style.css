@@ -1,0 +1,285 @@
+/* ======================================================================= */
+/* ALLGEMEINE STILE & BODY                                                 */
+/* ======================================================================= */
+body {
+    font-family: 'Inter', sans-serif;
+    /* Ein dunkler, leicht texturierter Hintergrund für mehr Atmosphäre */
+    background-color: #0f172a;
+    /* Slate 900 */
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231e293b' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    color: #cbd5e1;
+    /* Slate 300 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.player-card {
+    overflow: hidden !important;
+}
+
+/* ======================================================================= */
+/* HAUPTCONTAINER                                                          */
+/* ======================================================================= */
+.container {
+    background-color: rgba(30, 41, 59, 0.8);
+    /* Slate 800 mit Transparenz */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 1.5rem;
+    border: 1px solid rgba(55, 65, 81, 0.5);
+    /* Gray 700 */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    width: 100%;
+    padding: clamp(1.5rem, 5vw, 3rem);
+    transition: all 0.3s ease-in-out;
+}
+
+/* ======================================================================= */
+/* TYPOGRAPHIE                                                             */
+/* ======================================================================= */
+h1,
+h2,
+h3,
+h4 {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1.text-transparent {
+    /* Ein leuchtenderer Farbverlauf für den Haupttitel */
+    background-image: linear-gradient(to right, #ef4444, #f97316, #eab308);
+}
+
+/* ======================================================================= */
+/* MODALS & OVERLAYS                                                       */
+/* ======================================================================= */
+.modal-backdrop {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(15, 23, 42, 0.8);
+    /* Slate 900 mit Transparenz */
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-slide {
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.modal-hidden {
+    transform: translateX(100%);
+}
+
+#playerZoomContent {
+    border: 1px solid #4f46e5;
+    /* Indigo 600 */
+    box-shadow: 0 0 30px rgba(79, 70, 229, 0.5);
+}
+
+/* ======================================================================= */
+/* BUTTONS & INTERAKTIVE ELEMENTE                                          */
+/* ======================================================================= */
+button,
+.button {
+    transition: all 0.2s ease-in-out;
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+
+button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+/* Spezifische Button-Stile */
+.bg-green-600 {
+    background-color: #16a34a;
+}
+
+.bg-green-600:hover {
+    background-color: #15803d;
+}
+
+.bg-red-700 {
+    background-color: #b91c1c;
+}
+
+.bg-red-700:hover {
+    background-color: #991b1b;
+}
+
+.bg-purple-600 {
+    background-color: #9333ea;
+}
+
+.bg-purple-600:hover {
+    background-color: #7e22ce;
+}
+
+.bg-gray-600 {
+    background-color: #4b5563;
+}
+
+.bg-gray-600:hover {
+    background-color: #374151;
+}
+
+/* ======================================================================= */
+/* SPIELERKARTEN & STATUS                                                  */
+/* ======================================================================= */
+.player-card {
+    position: relative;
+    padding-bottom: 4rem;
+    /* Platz für die Abstimmungsknöpfe */
+    border-width: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.player-card:hover {
+    transform: scale(1.05);
+    border-color: #a78bfa;
+    /* Violet 400 */
+}
+
+/* Abstimmungsknöpfe auf den Karten */
+.day-vote-controls {
+    position: absolute;
+    bottom: 0.75rem;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.player-card:hover .day-vote-controls {
+    opacity: 1;
+}
+
+.day-vote-controls button {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: white;
+}
+
+/* ======================================================================= */
+/* FORMULARELEMENTE                                                        */
+/* ======================================================================= */
+input[type="text"],
+select {
+    background-color: #374151;
+    border: 1px solid #4b5563;
+    color: #f3f4f6;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+input[type="text"]:focus,
+select:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.4);
+}
+
+/* ======================================================================= */
+/* ANIMATIONEN                                                             */
+/* ======================================================================= */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* ======================================================================= */
+/* RESPONSIVE DESIGN (MOBILE)                                              */
+/* ======================================================================= */
+@media (max-width: 768px) {
+    body {
+        padding: 0.5rem;
+    }
+
+    .container {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+        line-height: 2.25rem;
+    }
+
+    #revealedRoleName {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+}
+
+#watermark {
+    opacity: 0.2;
+    font-size: .9rem;
+    color: white;
+    background: black;
+    position: fixed;
+    cursor: default;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    right: 5px;
+    bottom: 5px;
+}

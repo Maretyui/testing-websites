@@ -1,1 +1,245 @@
--
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Werwolf Spielleiter-Tool</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="selection:bg-indigo-500 selection:text-white">
+
+    <main class="container">
+
+        <section id="splashScreen" class="text-center">
+            <h1
+                class="text-7xl md:text-8xl font-extrabold text-center mb-4 text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-gray-400">
+                Werwolf
+            </h1>
+            <p class="text-xl text-gray-400 mb-12">Spielleiter-Version</p>
+            <button id="splashStartBtn"
+                class="w-full max-w-xs mx-auto bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-6 rounded-lg text-2xl">Start</button>
+        </section>
+
+        <section id="startMenu" class="hidden space-y-8">
+            <div class="mb-6" role="region" aria-labelledby="player-count-label">
+                <label id="player-count-label" class="block text-lg font-semibold mb-3 text-center">Anzahl der
+                    Spieler:</label>
+                <div
+                    class="flex items-center justify-center player-count-control bg-gray-800 border border-gray-700 rounded-lg p-2 max-w-xs mx-auto">
+                    <button id="decreasePlayerCount" aria-label="Spieleranzahl verringern"
+                        class="bg-gray-600 hover:bg-gray-500 text-white font-bold rounded-full flex items-center justify-center text-2xl">-</button>
+                    <span id="playerCountDisplay"
+                        class="text-white text-3xl font-bold text-center mx-4 player-count-display"
+                        aria-live="polite">6</span>
+                    <button id="increasePlayerCount" aria-label="Spieleranzahl erhöhen"
+                        class="bg-gray-600 hover:bg-gray-500 text-white font-bold rounded-full flex items-center justify-center text-2xl">+</button>
+                </div>
+                <p id="playerCountError" class="text-red-400 text-sm mt-2 text-center hidden" role="alert">Die
+                    Spieleranzahl muss mindestens 4 sein.</p>
+                <p id="roleCountMismatchError" class="text-red-400 text-sm mt-2 text-center hidden" role="alert">Die
+                    Gesamtzahl der Rollen muss der Spieleranzahl entsprechen.</p>
+            </div>
+            <div class="mb-6" role="region" aria-labelledby="roles-management-label">
+                <h2 id="roles-management-label" class="text-2xl font-bold mb-4 text-indigo-300 text-center">Rollen
+                    verwalten</h2>
+                <div class="bg-gray-800 border border-gray-700 p-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-200">Standardrollen</h3>
+                    <div id="defaultRoles" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+                </div>
+            </div>
+            <div class="pt-4 border-t border-gray-700 space-y-4">
+                <button id="startGameBtn"
+                    class="w-full bg-green-600 hover:bg-green-700 disabled:bg-gray-500 disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold py-4 px-6 rounded-lg text-lg">Spiel
+                    starten</button>
+                <button id="advancedSettingsBtn"
+                    class="w-full bg-gray-600 hover:bg-gray-700 text-white font-bold py-3 px-4 rounded-lg">Erweiterte
+                    Einstellungen</button>
+            </div>
+        </section>
+
+        <section id="playerInputAndRoleReveal" class="hidden text-center">
+            <h2 class="text-3xl font-bold mb-6 text-indigo-400" id="currentPhaseTitle" aria-live="polite"></h2>
+            <div id="nameInputSection">
+                <input type="text" id="currentPlayerNameInput" placeholder="Dein Name"
+                    class="w-full p-4 rounded-lg bg-gray-700 border border-gray-600 text-white mb-4 text-lg" />
+                <p id="currentPlayerNameError" class="text-red-400 text-sm mt-1 hidden" role="alert">Bitte gib einen
+                    Namen ein.</p>
+                <button id="submitCurrentPlayerNameBtn"
+                    class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg text-lg">Namen
+                    bestätigen</button>
+            </div>
+            <div id="roleRevealSection" class="hidden">
+                <p id="revealedRolePlayerName" class="text-2xl mb-4 font-semibold"></p>
+                <p id="revealedRoleName" class="text-6xl font-extrabold text-white mb-8"></p>
+                <p id="revealedRoleDescription" class="text-lg text-gray-300 mb-8 max-w-md mx-auto"></p>
+                <button id="roleSeenBtn"
+                    class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg text-lg">Gesehen &
+                    weitergeben</button>
+            </div>
+        </section>
+
+        <section id="narratorView" class="hidden">
+            <p class="text-xl font-bold mb-4 text-center text-gray-300 min-h-[56px]" id="narratorText"
+                aria-live="polite">Willkommen, Erzähler!</p>
+            <div id="gameLogWrapper">
+                <div role="log" aria-live="polite" id="gameLog"
+                    class="bg-gray-800 p-4 rounded-lg h-64 overflow-y-auto mb-6 text-sm text-gray-400 border border-gray-700">
+                </div>
+            </div>
+            <div id="playerStatus" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-6"
+                aria-label="Spielerstatus"></div>
+            <div id="narratorControls" class="flex flex-wrap gap-4 justify-center">
+                <button id="startNightBtn"
+                    class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-5 rounded-lg text-lg">Nacht
+                    beginnen</button>
+                <button id="nextStepBtn"
+                    class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-5 rounded-lg text-lg hidden">Weiter</button>
+                <button id="startDayBtn"
+                    class="bg-yellow-400 hover:bg-yellow-500 hidden text-gray-900 font-bold py-3 px-5 rounded-lg text-lg">Tag
+                    beginnen</button>
+                <div id="dayPhaseControls" class="hidden flex flex-wrap gap-4 justify-center w-full">
+                    <button id="executeVoteBtn"
+                        class="bg-red-700 hover:bg-red-800 text-white font-bold py-3 px-5 rounded-lg">Meiste Stimmen:
+                        Hinrichten</button>
+                    <button id="handleTieBtn"
+                        class="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-5 rounded-lg">Bei
+                        Gleichstand: Neuwahl</button>
+                    <button id="forceNightBtn"
+                        class="bg-indigo-700 hover:bg-indigo-800 text-white font-bold py-3 px-5 rounded-lg">Nacht
+                        einleiten</button>
+                </div>
+                <button id="backToMenuBtn"
+                    class="hidden bg-gray-600 hover:bg-gray-700 text-white font-bold py-3 px-5 rounded-lg">Zurück zum
+                    Menü</button>
+            </div>
+            <div id="narratorActionPanel" class="bg-gray-800 border border-gray-700 p-4 rounded-lg mt-6 hidden">
+                <h3 class="text-xl font-semibold mb-2 text-indigo-300 text-center" id="currentNarratorAction"></h3>
+                <p id="action-prompt" class="text-center text-gray-300 mb-4"></p>
+                <div id="narratorPlayerSelection" class="grid grid-cols-2 md:grid-cols-4 gap-4"></div>
+                <div class="flex justify-end mt-4">
+                    <button id="confirmNarratorActionBtn"
+                        class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg hidden disabled:opacity-50 disabled:cursor-not-allowed">Bestätigen</button>
+                    <button id="cancelNarratorActionBtn"
+                        class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-lg ml-2 hidden">Abbrechen</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="rolesSummaryModal" class="fixed inset-0 hidden modal-backdrop">
+        <div class="bg-gray-800 p-6 rounded-lg max-w-lg w-full text-white relative border border-gray-700">
+            <h3 class="text-2xl font-bold mb-4 text-indigo-300">Rollenübersicht</h3><button id="closeSummaryModalBtn"
+                class="absolute top-3 right-3 text-gray-400 text-3xl">&times;</button>
+            <div id="assignedRolesList" class="space-y-2"></div>
+        </div>
+    </div>
+    <div id="roleInfoModal" class="fixed inset-0 hidden modal-backdrop">
+        <div class="bg-gray-800 p-6 rounded-lg max-w-lg w-full text-white relative border border-gray-700">
+            <h3 id="infoRoleName" class="text-2xl font-bold mb-4 text-indigo-300"></h3>
+            <p id="infoRoleDescription" class="mb-4 text-gray-200"></p><button id="closeInfoModalBtn"
+                class="absolute top-3 right-3 text-gray-400 text-3xl">&times;</button>
+        </div>
+    </div>
+    <div id="playerZoomModal" class="fixed inset-0 hidden modal-backdrop">
+        <div id="playerZoomContent"
+            class="bg-gray-800 p-8 rounded-lg max-w-xl w-full text-white relative text-center transform scale-95 border border-gray-700">
+        </div>
+    </div>
+
+    <div id="advancedSettingsModal" class="fixed inset-0 p-0 hidden modal-backdrop" style="pointer-events: none;">
+        <div id="advancedSettingsPanel"
+            class="modal-slide modal-hidden bg-gray-800 h-full max-w-md w-full ml-auto text-white overflow-y-auto border-l border-gray-700"
+            style="pointer-events: auto;">
+            <div class="p-6 space-y-6">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-2xl font-bold text-indigo-300">Erweiterte Einstellungen</h3>
+                    <button id="closeAdvancedSettingsModalBtn" aria-label="Schließen"
+                        class="text-gray-400 hover:text-white text-3xl">&times;</button>
+                </div>
+                <div class="bg-gray-900/50 p-4 rounded-lg">
+                    <h4 class="text-xl font-semibold text-gray-200 mb-4">Nachtaufwachreihenfolge</h4>
+                    <div id="nightWakeUpOrderList"
+                        class="bg-gray-800 p-3 rounded-lg min-h-[150px] space-y-2 border border-gray-700"></div>
+                    <div class="flex justify-between items-center mt-3">
+                        <button id="resetOrderBtn"
+                            class="text-sm bg-yellow-600 hover:bg-yellow-700 px-3 py-1 rounded-md">Zurücksetzen</button>
+                        <div>
+                            <button id="editOrderBtn"
+                                class="text-sm bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded-md">Bearbeiten</button>
+                            <button id="saveOrderBtn"
+                                class="text-sm bg-green-600 hover:bg-green-700 px-3 py-1 rounded-md hidden">Speichern</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-900/50 p-4 rounded-lg">
+                    <h4 class="text-xl font-semibold mb-3 text-gray-200">Tränke der Hexe</h4>
+                    <div class="flex items-center justify-between"><label class="text-gray-300">Heiltränke</label>
+                        <div class="flex items-center player-count-control"><button id="decreaseHealPotions"
+                                class="bg-gray-600 text-white rounded-full">-</button><span id="healPotionCount"
+                                class="text-xl mx-4">1</span><button id="increaseHealPotions"
+                                class="bg-gray-600 text-white rounded-full">+</button></div>
+                    </div>
+                    <div class="flex items-center justify-between mt-2"><label class="text-gray-300">Gifttränke</label>
+                        <div class="flex items-center player-count-control"><button id="decreaseKillPotions"
+                                class="bg-gray-600 text-white rounded-full">-</button><span id="killPotionCount"
+                                class="text-xl mx-4">1</span><button id="increaseKillPotions"
+                                class="bg-gray-600 text-white rounded-full">+</button></div>
+                    </div>
+                </div>
+                <div class="bg-gray-900/50 p-4 rounded-lg">
+                    <h4 class="text-xl font-semibold mb-3 text-gray-200">Fähigkeit des Jägers</h4>
+                    <div class="flex items-center justify-between"><label class="text-gray-300">Anzahl der
+                            "Mitreiß-Aktionen"</label>
+                        <div class="flex items-center player-count-control"><button id="decreaseHunterUses"
+                                class="bg-gray-600 text-white rounded-full">-</button><span id="hunterUsesCount"
+                                class="text-xl mx-4">1</span><button id="increaseHunterUses"
+                                class="bg-gray-600 text-white rounded-full">+</button></div>
+                    </div>
+                </div>
+                <div class="bg-gray-900/50 p-4 rounded-lg">
+                    <h4 class="text-xl font-semibold mb-3 text-gray-200">Anzeige</h4>
+                    <div class="flex items-center justify-between"><label for="hideConsoleToggleInput"
+                            class="text-gray-300">Konsole anzeigen</label><label class="form-switch"><input
+                                type="checkbox" id="hideConsoleToggleInput" checked><span class="slider"></span></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="adminPanelModal" class="fixed inset-0 hidden modal-backdrop flex items-center justify-center p-4">
+        <div class="bg-gray-800 p-6 rounded-lg max-w-lg w-full text-white relative border border-gray-700">
+            <div class="flex justify-between items-center">
+                <h3 class="text-2xl font-bold text-indigo-300">Admin Panel</h3><button id="closeAdminPanelBtn"
+                    class="text-3xl">&times;</button>
+            </div>
+            <div id="adminPlayerList" class="mt-4 space-y-2 max-h-96 overflow-y-auto"></div>
+        </div>
+    </div>
+
+    <div id="gameOverModal" class="fixed inset-0 hidden modal-backdrop flex-col items-center justify-center">
+        <div class="text-center text-white">
+            <h2 id="winningTeamText" class="text-7xl font-extrabold mb-8"></h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <button id="newRoundBtn"
+                    class="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg text-2xl">Neue
+                    Runde</button>
+                <button id="reviewLastGameBtn"
+                    class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-4 px-8 rounded-lg text-2xl">Zum alten
+                    Spiel</button>
+            </div>
+        </div>
+    </div>
+    <div id="watermark">©Lior - 2025</div>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
