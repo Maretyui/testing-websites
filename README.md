@@ -12,3 +12,6 @@ On here, you can find testing websites. I test different things over time, and u
 * WCAG Contrast Checker <br>
   ---> Pick two colors, see the live contrast ratio and AA/AAA pass/fail
   $${\color{lightgreen}Successful}$$
+* Password Strength Meter <br>
+  ---> Live rule checklist and strength bar, fully client-side
+  $${\color{lightgreen}Successful}$$

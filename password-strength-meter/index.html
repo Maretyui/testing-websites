@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Passwort-Stärke</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Passwort-Stärke-Anzeige</h1>
+  <p class="hint">Rein clientseitig, nichts wird irgendwohin gesendet.</p>
+
+  <label class="field">
+    <input type="password" id="password" placeholder="Passwort eingeben" autocomplete="new-password">
+    <button type="button" id="toggle">Anzeigen</button>
+  </label>
+
+  <div class="meter">
+    <div class="meter-fill" id="meterFill"></div>
+  </div>
+  <p class="label" id="strengthLabel">Noch kein Passwort eingegeben</p>
+
+  <ul class="rules" id="rules">
+    <li data-rule="length">Mindestens 8 Zeichen</li>
+    <li data-rule="lower">Kleinbuchstabe enthalten</li>
+    <li data-rule="upper">Großbuchstabe enthalten</li>
+    <li data-rule="number">Zahl enthalten</li>
+    <li data-rule="symbol">Sonderzeichen enthalten</li>
+  </ul>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
