@@ -9,3 +9,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Login-Page with PHP <br>
   ---> Login-Page, connected to local MySQL 
   $${\color{lightgreen}Successful}$$
+* WCAG Contrast Checker <br>
+  ---> Pick two colors, see the live contrast ratio and AA/AAA pass/fail
+  $${\color{lightgreen}Successful}$$
