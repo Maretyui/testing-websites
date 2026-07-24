@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontrast-Checker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>WCAG Kontrast-Checker</h1>
+  <p class="hint">Prüft das Kontrastverhältnis zweier Farben gegen die WCAG-Richtlinien.</p>
+
+  <div class="controls">
+    <label>
+      Textfarbe
+      <input type="color" id="fg" value="#151a24">
+      <input type="text" id="fgHex" value="#151a24">
+    </label>
+    <label>
+      Hintergrundfarbe
+      <input type="color" id="bg" value="#f4f5f7">
+      <input type="text" id="bgHex" value="#f4f5f7">
+    </label>
+  </div>
+
+  <div class="preview" id="preview">
+    <p class="preview-large">Großer Text 24px</p>
+    <p class="preview-small">Normaler Fließtext 16px, so wie er in einem echten Absatz aussehen würde.</p>
+  </div>
+
+  <div class="result" id="result">
+    <div class="ratio" id="ratio">21.00 : 1</div>
+    <ul class="checks" id="checks"></ul>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
