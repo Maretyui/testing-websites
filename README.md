@@ -18,3 +18,6 @@ On here, you can find testing websites. I test different things over time, and u
 * JSON Formatter & Validator <br>
   ---> Paste JSON, pretty-print or minify it, get inline error messages
   $${\color{lightgreen}Successful}$$
+* Morse Code Translator <br>
+  ---> Text <-> Morse code, plus Web Audio playback of the actual beeps
+  $${\color{lightgreen}Successful}$$

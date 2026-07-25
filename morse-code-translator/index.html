@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Morsecode-Übersetzer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Morsecode-Übersetzer</h1>
+  <p class="hint">Text in Morsecode umwandeln und optional als Ton abspielen.</p>
+
+  <label class="field-label" for="text">Text</label>
+  <textarea id="text" placeholder="SOS"></textarea>
+
+  <label class="field-label" for="morse">Morsecode</label>
+  <textarea id="morse" placeholder="... --- ..."></textarea>
+
+  <div class="actions">
+    <button type="button" id="toMorse">Text &rarr; Morse</button>
+    <button type="button" id="toText">Morse &rarr; Text</button>
+    <button type="button" id="play">&#9658; Abspielen</button>
+  </div>
+
+  <p class="status" id="status"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
