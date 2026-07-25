@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JSON Formatter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>JSON Formatter &amp; Validator</h1>
+  <p class="hint">Rein clientseitig, nichts wird irgendwohin gesendet.</p>
+
+  <textarea id="input" placeholder='{"beispiel": [1, 2, 3], "gueltig": true}'></textarea>
+
+  <div class="actions">
+    <button type="button" id="format">Formatieren</button>
+    <button type="button" id="minify">Minimieren</button>
+    <button type="button" id="clear">Leeren</button>
+  </div>
+
+  <p class="status" id="status">Noch kein JSON eingegeben</p>
+
+  <pre id="output"></pre>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

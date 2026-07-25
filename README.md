@@ -15,3 +15,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Password Strength Meter <br>
   ---> Live rule checklist and strength bar, fully client-side
   $${\color{lightgreen}Successful}$$
+* JSON Formatter & Validator <br>
+  ---> Paste JSON, pretty-print or minify it, get inline error messages
+  $${\color{lightgreen}Successful}$$
