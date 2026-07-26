@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farbpaletten-Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Farbpaletten-Generator</h1>
+  <p class="hint">Rein clientseitig, nichts wird irgendwohin gesendet.</p>
+
+  <div class="field">
+    <input type="color" id="baseColor" value="#6366f1">
+    <input type="text" id="baseColorHex" value="#6366f1" maxlength="7" spellcheck="false">
+  </div>
+
+  <div class="scheme-tabs" id="schemeTabs">
+    <button type="button" class="scheme-tab active" data-scheme="complementary">Komplementär</button>
+    <button type="button" class="scheme-tab" data-scheme="analogous">Analog</button>
+    <button type="button" class="scheme-tab" data-scheme="triadic">Triadisch</button>
+    <button type="button" class="scheme-tab" data-scheme="shades">Abstufungen</button>
+  </div>
+
+  <div class="palette" id="palette"></div>
+  <p class="copy-hint">Klick auf eine Farbe, um den Hex-Code zu kopieren.</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

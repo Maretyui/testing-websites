@@ -24,3 +24,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Text Statistics <br>
   ---> Character/word/sentence/paragraph counts and reading time estimate, live as you type
   $${\color{lightgreen}Successful}$$
+* Color Palette Generator <br>
+  ---> Pick a base color, get complementary/analogous/triadic/shade palettes, click to copy hex
+  $${\color{lightgreen}Successful}$$
