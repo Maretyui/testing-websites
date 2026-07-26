@@ -21,3 +21,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Morse Code Translator <br>
   ---> Text <-> Morse code, plus Web Audio playback of the actual beeps
   $${\color{lightgreen}Successful}$$
+* Text Statistics <br>
+  ---> Character/word/sentence/paragraph counts and reading time estimate, live as you type
+  $${\color{lightgreen}Successful}$$

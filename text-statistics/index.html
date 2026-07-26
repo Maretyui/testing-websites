@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text-Statistik</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Text-Statistik</h1>
+  <p class="hint">Rein clientseitig, nichts wird irgendwohin gesendet.</p>
+
+  <textarea id="input" placeholder="Text hier einfügen oder tippen …" rows="10"></textarea>
+
+  <div class="stats" id="stats">
+    <div class="stat">
+      <span class="value" id="charCount">0</span>
+      <span class="stat-label">Zeichen</span>
+    </div>
+    <div class="stat">
+      <span class="value" id="charCountNoSpaces">0</span>
+      <span class="stat-label">ohne Leerzeichen</span>
+    </div>
+    <div class="stat">
+      <span class="value" id="wordCount">0</span>
+      <span class="stat-label">Wörter</span>
+    </div>
+    <div class="stat">
+      <span class="value" id="sentenceCount">0</span>
+      <span class="stat-label">Sätze</span>
+    </div>
+    <div class="stat">
+      <span class="value" id="paragraphCount">0</span>
+      <span class="stat-label">Absätze</span>
+    </div>
+    <div class="stat">
+      <span class="value" id="readingTime">0 Min.</span>
+      <span class="stat-label">Lesezeit</span>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
