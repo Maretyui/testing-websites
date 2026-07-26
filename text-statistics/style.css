@@ -1,0 +1,77 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e9eaee;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  padding: 2rem;
+}
+
+.container {
+  width: min(90vw, 560px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  font-size: 1.3rem;
+  margin: 0 0 0.4rem;
+}
+
+.hint {
+  color: #6b7280;
+  font-size: 0.85rem;
+  margin: 0 0 1.5rem;
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0.75rem;
+  font: inherit;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #111827;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+.stats {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  background: #f4f5f7;
+  border-radius: 8px;
+  padding: 0.75rem 0.5rem;
+  text-align: center;
+}
+
+.stat .value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.stat-label {
+  font-size: 0.7rem;
+  color: #6b7280;
+}
