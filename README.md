@@ -30,3 +30,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Pomodoro Timer <br>
   ---> Start/pause/reset focus & break countdowns, auto-switches at zero, tracks completed sessions
   $${\color{lightgreen}Successful}$$
+* Markdown Previewer <br>
+  ---> Type Markdown on one side, see it rendered live on the other, hand-rolled parser, no library
+  $${\color{lightgreen}Successful}$$
