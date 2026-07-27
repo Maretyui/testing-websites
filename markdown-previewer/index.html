@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Markdown Previewer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Markdown Previewer</h1>
+  <p class="hint">Rein clientseitig, nichts wird irgendwohin gesendet. Eigener Mini-Parser, keine Library.</p>
+
+  <div class="panes">
+    <textarea id="input" spellcheck="false"># Überschrift
+
+Schreib hier dein **Markdown** rein und sieh die *Vorschau* live rechts.
+
+## Unterstützte Syntax
+
+- `#`, `##`, `###` Überschriften
+- **fett** und *kursiv*
+- [Links](https://maretyui.com)
+- `inline code`
+- Codeblöcke:
+
+```
+console.log("Hallo Welt");
+```
+
+- Und
+- unsortierte
+- Listen
+</textarea>
+    <div id="preview" class="preview"></div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
