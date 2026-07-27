@@ -27,3 +27,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Color Palette Generator <br>
   ---> Pick a base color, get complementary/analogous/triadic/shade palettes, click to copy hex
   $${\color{lightgreen}Successful}$$
+* Pomodoro Timer <br>
+  ---> Start/pause/reset focus & break countdowns, auto-switches at zero, tracks completed sessions
+  $${\color{lightgreen}Successful}$$
