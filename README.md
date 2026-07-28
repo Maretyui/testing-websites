@@ -36,3 +36,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Password Generator <br>
   ---> Customizable length & character sets, crypto.getRandomValues for real randomness, live strength meter
   $${\color{lightgreen}Successful}$$
+* Unit Converter <br>
+  ---> Length/weight/temperature conversions across tabs, live as you type, no API calls
+  $${\color{lightgreen}Successful}$$
