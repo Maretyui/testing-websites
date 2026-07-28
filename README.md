@@ -33,3 +33,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Markdown Previewer <br>
   ---> Type Markdown on one side, see it rendered live on the other, hand-rolled parser, no library
   $${\color{lightgreen}Successful}$$
+* Password Generator <br>
+  ---> Customizable length & character sets, crypto.getRandomValues for real randomness, live strength meter
+  $${\color{lightgreen}Successful}$$

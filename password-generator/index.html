@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Passwort-Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Passwort-Generator</h1>
+  <p class="hint">Rein clientseitig, nichts wird irgendwohin gesendet. Nutzt crypto.getRandomValues für echten Zufall.</p>
+
+  <div class="output-row">
+    <input type="text" id="output" readonly value="">
+    <button id="copyBtn" title="In Zwischenablage kopieren">Kopieren</button>
+  </div>
+  <p class="copied" id="copiedMsg" aria-live="polite"></p>
+
+  <div class="strength" id="strength">
+    <div class="strength-bar"><div class="strength-fill" id="strengthFill"></div></div>
+    <span class="strength-label" id="strengthLabel"></span>
+  </div>
+
+  <div class="settings">
+    <label class="length-row">
+      Länge
+      <input type="range" id="lengthRange" min="6" max="48" value="16">
+      <span class="length-value" id="lengthValue">16</span>
+    </label>
+
+    <label class="checkbox-row">
+      <input type="checkbox" id="lowercase" checked>
+      Kleinbuchstaben (a-z)
+    </label>
+    <label class="checkbox-row">
+      <input type="checkbox" id="uppercase" checked>
+      Großbuchstaben (A-Z)
+    </label>
+    <label class="checkbox-row">
+      <input type="checkbox" id="numbers" checked>
+      Zahlen (0-9)
+    </label>
+    <label class="checkbox-row">
+      <input type="checkbox" id="symbols">
+      Sonderzeichen (!@#$...)
+    </label>
+  </div>
+
+  <button id="generateBtn" class="generate-btn">Neu generieren</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
