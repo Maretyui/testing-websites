@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Einheiten-Umrechner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Einheiten-Umrechner</h1>
+  <p class="hint">Rein clientseitig, nichts wird irgendwohin gesendet.</p>
+
+  <div class="category-tabs" id="categoryTabs" role="tablist">
+    <button class="tab is-active" data-category="length" type="button">Länge</button>
+    <button class="tab" data-category="weight" type="button">Gewicht</button>
+    <button class="tab" data-category="temperature" type="button">Temperatur</button>
+  </div>
+
+  <div class="convert-row">
+    <div class="field">
+      <input type="number" id="fromValue" value="1">
+      <select id="fromUnit"></select>
+    </div>
+
+    <button id="swapBtn" class="swap-btn" title="Einheiten tauschen" aria-label="Einheiten tauschen">⇄</button>
+
+    <div class="field">
+      <input type="text" id="toValue" readonly>
+      <select id="toUnit"></select>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
