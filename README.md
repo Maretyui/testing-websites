@@ -42,3 +42,6 @@ On here, you can find testing websites. I test different things over time, and u
 * CSS Gradient Generator <br>
   ---> Linear/radial gradients with adjustable color stops and angle, live preview plus copyable CSS output
   $${\color{lightgreen}Successful}$$
+* Conway's Game of Life <br>
+  ---> Canvas-based cellular automaton, click cells to seed, play/pause/step with adjustable speed
+  $${\color{lightgreen}Successful}$$
