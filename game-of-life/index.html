@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conways Spiel des Lebens</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Conways Spiel des Lebens</h1>
+  <p class="hint">Zellen anklicken zum Umschalten, dann Start drücken. Läuft komplett clientseitig, mit umlaufenden Rändern.</p>
+
+  <canvas id="grid" width="500" height="350" aria-label="Zellraster, anklicken um Zellen zu aktivieren"></canvas>
+
+  <div class="stats">
+    <span><strong id="generation">0</strong> Generation</span>
+    <span><strong id="population">0</strong> lebende Zellen</span>
+  </div>
+
+  <div class="controls">
+    <button id="toggleBtn" class="primary-btn" type="button">Start</button>
+    <button id="stepBtn" class="secondary-btn" type="button">Schritt</button>
+    <button id="randomBtn" class="secondary-btn" type="button">Zufällig</button>
+    <button id="clearBtn" class="secondary-btn" type="button">Leeren</button>
+  </div>
+
+  <div class="row">
+    <label for="speed">Geschwindigkeit</label>
+    <input type="range" id="speed" min="1" max="10" value="5">
+    <span class="value" id="speedValue">5</span>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
