@@ -39,3 +39,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Unit Converter <br>
   ---> Length/weight/temperature conversions across tabs, live as you type, no API calls
   $${\color{lightgreen}Successful}$$
+* CSS Gradient Generator <br>
+  ---> Linear/radial gradients with adjustable color stops and angle, live preview plus copyable CSS output
+  $${\color{lightgreen}Successful}$$

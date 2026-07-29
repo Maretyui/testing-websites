@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS-Verlaufsgenerator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>CSS-Verlaufsgenerator</h1>
+  <p class="hint">Rein clientseitig, nichts wird irgendwohin gesendet.</p>
+
+  <div class="preview" id="preview"></div>
+
+  <div class="type-tabs" id="typeTabs" role="tablist">
+    <button class="tab is-active" data-type="linear" type="button">Linear</button>
+    <button class="tab" data-type="radial" type="button">Radial</button>
+  </div>
+
+  <div class="row" id="angleRow">
+    <label for="angle">Winkel</label>
+    <input type="range" id="angle" min="0" max="360" value="90">
+    <span class="value" id="angleValue">90&deg;</span>
+  </div>
+
+  <div class="stops" id="stops"></div>
+
+  <div class="stop-actions">
+    <button id="addStopBtn" class="secondary-btn" type="button">+ Farbe hinzufügen</button>
+    <button id="randomizeBtn" class="secondary-btn" type="button">Zufällig</button>
+  </div>
+
+  <div class="output-row">
+    <textarea id="code" readonly rows="2"></textarea>
+    <button id="copyBtn" type="button">Kopieren</button>
+  </div>
+  <p class="copied" id="copiedMsg"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
