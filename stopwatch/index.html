@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stoppuhr</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Stoppuhr</h1>
+  <p class="hint">Rein clientseitig, läuft über performance.now() statt setInterval-Drift.</p>
+
+  <div class="display" id="display" aria-live="off">00:00.00</div>
+
+  <div class="controls">
+    <button id="startStopBtn" class="start-btn">Start</button>
+    <button id="lapBtn" disabled>Runde</button>
+    <button id="resetBtn" class="reset-btn">Zurücksetzen</button>
+  </div>
+
+  <ol class="laps" id="laps"></ol>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

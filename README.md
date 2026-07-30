@@ -45,3 +45,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Conway's Game of Life <br>
   ---> Canvas-based cellular automaton, click cells to seed, play/pause/step with adjustable speed
   $${\color{lightgreen}Successful}$$
+* Stopwatch <br>
+  ---> Start/stop/reset with lap recording, requestAnimationFrame-driven so it doesn't drift like setInterval
+  $${\color{lightgreen}Successful}$$
