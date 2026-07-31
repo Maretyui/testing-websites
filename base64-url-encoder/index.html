@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Base64 &amp; URL Encoder/Decoder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Base64 &amp; URL Encoder/Decoder</h1>
+  <p class="hint">Rein clientseitig, nichts wird irgendwohin gesendet.</p>
+
+  <div class="type-tabs" id="modeTabs" role="tablist">
+    <button class="tab is-active" data-mode="base64" type="button">Base64</button>
+    <button class="tab" data-mode="url" type="button">URL</button>
+  </div>
+
+  <label class="field-label" for="input">Eingabe</label>
+  <textarea id="input" placeholder="Text oder kodierte Daten hier einfügen..."></textarea>
+
+  <div class="actions">
+    <button type="button" id="encodeBtn">Kodieren</button>
+    <button type="button" id="decodeBtn">Dekodieren</button>
+    <button type="button" id="swapBtn" class="secondary-btn">⇅ Ergebnis übernehmen</button>
+    <button type="button" id="clearBtn" class="secondary-btn">Leeren</button>
+  </div>
+
+  <p class="status" id="status">Bereit</p>
+
+  <label class="field-label" for="output">Ausgabe</label>
+  <div class="output-row">
+    <textarea id="output" readonly placeholder="Ergebnis erscheint hier..."></textarea>
+    <button id="copyBtn" type="button">Kopieren</button>
+  </div>
+  <p class="copied" id="copiedMsg"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
