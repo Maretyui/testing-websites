@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tippgeschwindigkeit-Test</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Tippgeschwindigkeit-Test</h1>
+  <p class="hint">Rein clientseitig, misst Wörter pro Minute (WPM) und Genauigkeit live, sobald du tippst.</p>
+
+  <div class="stats" id="stats">
+    <div class="stat">
+      <span class="stat-value" id="wpmValue">0</span>
+      <span class="stat-label">WPM</span>
+    </div>
+    <div class="stat">
+      <span class="stat-value" id="accuracyValue">100%</span>
+      <span class="stat-label">Genauigkeit</span>
+    </div>
+    <div class="stat">
+      <span class="stat-value" id="timeValue">0.0s</span>
+      <span class="stat-label">Zeit</span>
+    </div>
+    <div class="stat">
+      <span class="stat-value" id="errorsValue">0</span>
+      <span class="stat-label">Fehler</span>
+    </div>
+  </div>
+
+  <div class="text-display" id="textDisplay" aria-live="off"></div>
+
+  <textarea id="typedInput" class="typed-input" placeholder="Klicke hier und tippe den obigen Text ab, sobald du bereit bist..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+
+  <p class="status" id="status">Bereit &ndash; beginne einfach zu tippen</p>
+
+  <div class="actions">
+    <button type="button" id="restartBtn">Neuer Text</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
