@@ -48,3 +48,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Stopwatch <br>
   ---> Start/stop/reset with lap recording, requestAnimationFrame-driven so it doesn't drift like setInterval
   $${\color{lightgreen}Successful}$$
+* Base64 & URL Encoder/Decoder <br>
+  ---> Toggle between Base64 and URL (percent) encoding, UTF-8 safe via TextEncoder/TextDecoder, live error messages for invalid input
+  $${\color{lightgreen}Successful}$$
