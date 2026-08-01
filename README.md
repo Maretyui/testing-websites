@@ -54,3 +54,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Typing Speed Test <br>
   ---> Type random German passages against the clock, live WPM/accuracy/error tracking with per-character highlighting
   $${\color{lightgreen}Successful}$$
+* Regex Tester <br>
+  ---> Type a pattern & flags, see live highlighted matches in a test string plus a full match/group breakdown
+  $${\color{lightgreen}Successful}$$
