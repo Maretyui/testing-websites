@@ -57,3 +57,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Regex Tester <br>
   ---> Type a pattern & flags, see live highlighted matches in a test string plus a full match/group breakdown
   $${\color{lightgreen}Successful}$$
+* Tic-Tac-Toe <br>
+  ---> Play a friend locally or challenge an unbeatable minimax-driven computer, with scoreboard and win-line highlighting
+  $${\color{lightgreen}Successful}$$

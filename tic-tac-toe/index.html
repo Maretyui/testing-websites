@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tic-Tac-Toe</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Tic-Tac-Toe</h1>
+  <p class="hint">Rein clientseitig. Gegen einen Freund oder gegen einen unbesiegbaren Computer (Minimax).</p>
+
+  <div class="mode-toggle" id="modeToggle" role="group" aria-label="Spielmodus">
+    <button type="button" class="mode-btn active" data-mode="cpu">Gegen Computer</button>
+    <button type="button" class="mode-btn" data-mode="pvp">2 Spieler</button>
+  </div>
+
+  <p class="status" id="status">Du bist X &mdash; du beginnst</p>
+
+  <div class="board" id="board" role="grid" aria-label="Spielfeld"></div>
+
+  <div class="scoreboard" id="scoreboard">
+    <div class="score-item">
+      <span class="score-label" id="xLabel">X</span>
+      <span class="score-value" id="scoreX">0</span>
+    </div>
+    <div class="score-item">
+      <span class="score-label">Unentschieden</span>
+      <span class="score-value" id="scoreDraw">0</span>
+    </div>
+    <div class="score-item">
+      <span class="score-label" id="oLabel">Computer</span>
+      <span class="score-value" id="scoreO">0</span>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button type="button" id="newRoundBtn">Neue Runde</button>
+    <button type="button" id="resetScoreBtn">Punktestand zurücksetzen</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
