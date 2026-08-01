@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Regex-Tester</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Regex-Tester</h1>
+  <p class="hint">Rein clientseitig, nutzt die native JavaScript-RegExp-Engine &mdash; nichts wird irgendwohin gesendet.</p>
+
+  <label class="field-label" for="pattern">Muster</label>
+  <div class="pattern-row">
+    <span class="slash">/</span>
+    <input type="text" id="pattern" placeholder="z. B. (\w+)@(\w+)\.\w+" autocomplete="off" spellcheck="false">
+    <span class="slash">/</span>
+    <input type="text" id="flags" placeholder="gi" autocomplete="off" spellcheck="false" maxlength="6">
+  </div>
+
+  <div class="flag-toggles" id="flagToggles">
+    <label><input type="checkbox" data-flag="g" checked> <span class="flag-letter">g</span><span class="flag-name">global</span></label>
+    <label><input type="checkbox" data-flag="i"> <span class="flag-letter">i</span><span class="flag-name">ignore case</span></label>
+    <label><input type="checkbox" data-flag="m"> <span class="flag-letter">m</span><span class="flag-name">multiline</span></label>
+    <label><input type="checkbox" data-flag="s"> <span class="flag-letter">s</span><span class="flag-name">dotall</span></label>
+  </div>
+
+  <p class="status" id="status">Muster eingeben, um zu starten</p>
+
+  <label class="field-label" for="testString">Test-String</label>
+  <textarea id="testString" placeholder="Hier den Text eingeben, gegen den geprüft werden soll...">Kontakt: max.mustermann@example.com oder anna99@test.de erreichbar. Telefon: 0176-1234567</textarea>
+
+  <label class="field-label">Hervorhebung</label>
+  <div id="highlighted" class="highlighted" aria-live="polite"></div>
+
+  <h2 class="section-title">Treffer (<span id="matchCount">0</span>)</h2>
+  <ol id="matchList" class="match-list"></ol>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
