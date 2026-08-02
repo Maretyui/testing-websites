@@ -63,3 +63,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Text-Diff-Checker <br>
   ---> Paste two texts, get a line-by-line added/removed/unchanged diff via an LCS algorithm, no library
   $${\color{lightgreen}Successful}$$
+* Memory <br>
+  ---> Classic card-matching game with a 3D flip animation, move counter and timer
+  $${\color{lightgreen}Successful}$$

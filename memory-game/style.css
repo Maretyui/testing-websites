@@ -1,0 +1,144 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e9eaee;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  padding: 2rem;
+}
+
+.container {
+  width: min(92vw, 480px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.3rem;
+  margin: 0 0 0.4rem;
+}
+
+.hint {
+  color: #6b7280;
+  font-size: 0.85rem;
+  margin: 0 0 1.5rem;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #f4f5f7;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.6rem 0.9rem;
+  margin-bottom: 1.25rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 0.7rem;
+}
+
+.stat-label {
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.stat-value {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #374151;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+#newGameBtn {
+  margin-left: auto;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 0.9rem;
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.78rem;
+  cursor: pointer;
+  background: #4338ca;
+  color: #fff;
+}
+#newGameBtn:hover { background: #372da3; }
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.6rem;
+}
+
+.card {
+  aspect-ratio: 1;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  perspective: 600px;
+  padding: 0;
+  background: transparent;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.35s;
+  transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner,
+.card.matched .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  font-size: 1.8rem;
+}
+
+.card-back {
+  background: #4338ca;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.card-front {
+  background: #eef2ff;
+  transform: rotateY(180deg);
+  border: 1px solid #e0e7ff;
+}
+
+.card.matched .card-front {
+  background: #dcfce7;
+  border-color: #bbf7d0;
+}
+
+.card:disabled { cursor: default; }
+
+.win-message {
+  margin: 1.25rem 0 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #15803d;
+}
