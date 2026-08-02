@@ -60,3 +60,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Tic-Tac-Toe <br>
   ---> Play a friend locally or challenge an unbeatable minimax-driven computer, with scoreboard and win-line highlighting
   $${\color{lightgreen}Successful}$$
+* Text-Diff-Checker <br>
+  ---> Paste two texts, get a line-by-line added/removed/unchanged diff via an LCS algorithm, no library
+  $${\color{lightgreen}Successful}$$
