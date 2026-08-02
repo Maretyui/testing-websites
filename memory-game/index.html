@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memory</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Memory</h1>
+  <p class="hint">Finde alle Paare mit möglichst wenigen Zügen.</p>
+
+  <div class="toolbar">
+    <div class="stat"><span class="stat-label">Züge</span><span class="stat-value" id="moves">0</span></div>
+    <div class="stat"><span class="stat-label">Paare</span><span class="stat-value" id="pairs">0 / 8</span></div>
+    <div class="stat"><span class="stat-label">Zeit</span><span class="stat-value" id="time">00:00</span></div>
+    <button type="button" id="newGameBtn">Neues Spiel</button>
+  </div>
+
+  <div class="board" id="board" role="grid" aria-label="Spielfeld"></div>
+
+  <p class="win-message" id="winMessage" hidden></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
