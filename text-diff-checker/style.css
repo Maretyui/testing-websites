@@ -1,0 +1,134 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: #e9eaee;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  padding: 2rem;
+}
+
+.container {
+  width: min(92vw, 880px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  font-size: 1.3rem;
+  margin: 0 0 0.4rem;
+}
+
+.hint {
+  color: #6b7280;
+  font-size: 0.85rem;
+  margin: 0 0 1.5rem;
+}
+
+.inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 640px) {
+  .inputs { grid-template-columns: 1fr; }
+}
+
+.input-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.input-col label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+textarea {
+  width: 100%;
+  min-height: 160px;
+  resize: vertical;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.7rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  background: #f9fafb;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #4338ca;
+  background: #fff;
+}
+
+.actions {
+  display: flex;
+  gap: 0.6rem;
+  margin: 1.25rem 0;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+#compareBtn {
+  background: #4338ca;
+  color: #fff;
+}
+#compareBtn:hover { background: #372da3; }
+
+#clearBtn {
+  background: #f4f5f7;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+}
+#clearBtn:hover { background: #eceef1; }
+
+.stats {
+  display: flex;
+  gap: 1.25rem;
+  font-size: 0.82rem;
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+}
+.stat b { font-size: 0.95rem; }
+.stat.added b { color: #15803d; }
+.stat.removed b { color: #b91c1c; }
+.stat.unchanged b { color: #374151; }
+
+.diff-output {
+  margin: 0;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.9rem;
+  max-height: 420px;
+  overflow: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: #f9fafb;
+}
+
+.diff-output .line { display: block; padding: 0 0.4rem; border-radius: 4px; }
+.diff-output .line.added { background: #dcfce7; color: #166534; }
+.diff-output .line.removed { background: #fee2e2; color: #991b1b; }
+.diff-output .line.unchanged { color: #6b7280; }
+.diff-output .marker { display: inline-block; width: 1.2rem; font-weight: 700; }
+.diff-output .empty { color: #9ca3af; font-style: italic; }

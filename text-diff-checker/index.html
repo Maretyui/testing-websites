@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text-Diff-Checker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Text-Diff-Checker</h1>
+  <p class="hint">Vergleicht zwei Texte zeilenweise und markiert hinzugefügte, entfernte und unveränderte Zeilen.</p>
+
+  <div class="inputs">
+    <div class="input-col">
+      <label for="textA">Text A (Original)</label>
+      <textarea id="textA" spellcheck="false" placeholder="Ersten Text hier einfügen…"></textarea>
+    </div>
+    <div class="input-col">
+      <label for="textB">Text B (Geändert)</label>
+      <textarea id="textB" spellcheck="false" placeholder="Zweiten Text hier einfügen…"></textarea>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button type="button" id="compareBtn">Vergleichen</button>
+    <button type="button" id="clearBtn">Leeren</button>
+  </div>
+
+  <div class="stats" id="stats" hidden>
+    <span class="stat added"><b id="addedCount">0</b> hinzugefügt</span>
+    <span class="stat removed"><b id="removedCount">0</b> entfernt</span>
+    <span class="stat unchanged"><b id="unchangedCount">0</b> unverändert</span>
+  </div>
+
+  <pre class="diff-output" id="diffOutput" aria-live="polite"></pre>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
