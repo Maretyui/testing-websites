@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farbfehlsichtigkeits-Simulator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Farbfehlsichtigkeits-Simulator</h1>
+  <p class="hint">
+    Lade ein Bild hoch (oder nutze das Beispielbild) und sieh, wie es bei
+    verschiedenen Formen der Farbfehlsichtigkeit wahrgenommen wird.
+  </p>
+
+  <div class="toolbar">
+    <label class="upload-btn" for="fileInput">Eigenes Bild wählen</label>
+    <input type="file" id="fileInput" accept="image/*" hidden>
+    <button type="button" id="sampleBtn">Beispielbild nutzen</button>
+  </div>
+
+  <div class="grid" id="grid" aria-live="polite">
+    <figure>
+      <canvas id="canvas-normal"></canvas>
+      <figcaption>Normalsicht</figcaption>
+    </figure>
+    <figure>
+      <canvas id="canvas-protanopia"></canvas>
+      <figcaption>Protanopie <span>(kein Rot)</span></figcaption>
+    </figure>
+    <figure>
+      <canvas id="canvas-deuteranopia"></canvas>
+      <figcaption>Deuteranopie <span>(kein Grün)</span></figcaption>
+    </figure>
+    <figure>
+      <canvas id="canvas-tritanopia"></canvas>
+      <figcaption>Tritanopie <span>(kein Blau)</span></figcaption>
+    </figure>
+    <figure>
+      <canvas id="canvas-achromatopsia"></canvas>
+      <figcaption>Achromatopsie <span>(keine Farben)</span></figcaption>
+    </figure>
+  </div>
+
+  <p class="note">
+    Simulation basiert auf festen Transformationsmatrizen und ist eine
+    Annäherung, keine exakte medizinische Simulation. Alles läuft lokal
+    im Browser via Canvas, es wird nichts hochgeladen.
+  </p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

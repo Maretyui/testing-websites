@@ -66,3 +66,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Memory <br>
   ---> Classic card-matching game with a 3D flip animation, move counter and timer
   $${\color{lightgreen}Successful}$$
+* Color Blindness Simulator <br>
+  ---> Upload an image (or use the sample swatches), see it rendered under protanopia/deuteranopia/tritanopia/achromatopsia via canvas pixel transforms
+  $${\color{lightgreen}Successful}$$
