@@ -69,3 +69,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Color Blindness Simulator <br>
   ---> Upload an image (or use the sample swatches), see it rendered under protanopia/deuteranopia/tritanopia/achromatopsia via canvas pixel transforms
   $${\color{lightgreen}Successful}$$
+* Snake <br>
+  ---> Classic grid-based Snake on canvas, arrow keys/WASD/on-screen d-pad, adjustable speed, pause, and a localStorage-backed highscore
+  $${\color{lightgreen}Successful}$$
