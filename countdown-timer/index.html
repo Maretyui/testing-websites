@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Countdown</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Countdown</h1>
+  <p class="hint">Zähl auf ein Datum/Uhrzeit runter, mehrere Countdowns werden lokal im Browser gespeichert (localStorage).</p>
+
+  <form id="addForm" class="add-form">
+    <label>
+      Titel
+      <input type="text" id="titleInput" placeholder="z. B. Geburtstag" maxlength="60" required>
+    </label>
+    <label>
+      Zieldatum &amp; Zeit
+      <input type="datetime-local" id="targetInput" required>
+    </label>
+    <button type="submit">Countdown hinzufügen</button>
+  </form>
+
+  <div id="errorMsg" class="error hidden" role="alert"></div>
+
+  <div id="list" class="list"></div>
+  <p id="emptyState" class="empty hidden">Noch kein Countdown angelegt.</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

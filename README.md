@@ -72,3 +72,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Snake <br>
   ---> Classic grid-based Snake on canvas, arrow keys/WASD/on-screen d-pad, adjustable speed, pause, and a localStorage-backed highscore
   $${\color{lightgreen}Successful}$$
+* Countdown Timer <br>
+  ---> Add multiple named countdowns to a date/time, live days/hours/min/sec ticking down per card, persisted in localStorage
+  $${\color{lightgreen}Successful}$$
