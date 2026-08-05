@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weltuhr</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Weltuhr</h1>
+  <p class="hint">Zeitzonen hinzufügen und live mitlaufen sehen, alles lokal im Browser gespeichert (localStorage).</p>
+
+  <form id="addForm" class="add-form">
+    <label>
+      Bezeichnung
+      <input type="text" id="labelInput" placeholder="z. B. Tokio" maxlength="40" required>
+    </label>
+    <label>
+      Zeitzone
+      <select id="zoneInput" required></select>
+    </label>
+    <button type="submit">Uhr hinzufügen</button>
+  </form>
+
+  <div id="errorMsg" class="error hidden" role="alert"></div>
+
+  <div id="list" class="list"></div>
+  <p id="emptyState" class="empty hidden">Noch keine Uhr hinzugefügt.</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
