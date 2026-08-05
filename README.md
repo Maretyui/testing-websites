@@ -75,3 +75,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Countdown Timer <br>
   ---> Add multiple named countdowns to a date/time, live days/hours/min/sec ticking down per card, persisted in localStorage
   $${\color{lightgreen}Successful}$$
+* World Clock <br>
+  ---> Add named clocks across IANA time zones, live ticking time/date/UTC-offset per card, persisted in localStorage
+  $${\color{lightgreen}Successful}$$
