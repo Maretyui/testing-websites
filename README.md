@@ -81,3 +81,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Roman Numeral Converter <br>
   ---> Two-way conversion between arabic (1-3999) and roman numerals, live as you type in either field
   $${\color{lightgreen}Successful}$$
+* Dice Roller <br>
+  ---> Roll a configurable number of D4/D6/D8/D10/D12/D20 dice, see per-die results plus a running total and roll history
+  $${\color{lightgreen}Successful}$$
