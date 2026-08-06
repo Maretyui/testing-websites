@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roman Numeral Converter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Roman Numeral Converter</h1>
+  <p class="hint">Wandelt zwischen arabischen Zahlen (1–3999) und römischen Ziffern um, live während der Eingabe.</p>
+
+  <div class="panes">
+    <label class="pane">
+      Arabisch
+      <input type="number" id="arabicInput" min="1" max="3999" placeholder="z. B. 1994">
+    </label>
+    <label class="pane">
+      Römisch
+      <input type="text" id="romanInput" placeholder="z. B. MCMXCIV">
+    </label>
+  </div>
+
+  <div id="errorMsg" class="error hidden" role="alert"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
