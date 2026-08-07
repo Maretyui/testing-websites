@@ -84,3 +84,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Dice Roller <br>
   ---> Roll a configurable number of D4/D6/D8/D10/D12/D20 dice, see per-die results plus a running total and roll history
   $${\color{lightgreen}Successful}$$
+* Number Base Converter <br>
+  ---> Type into any of Binary/Octal/Decimal/Hex, the other three update live, with per-base input validation
+  $${\color{lightgreen}Successful}$$

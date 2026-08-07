@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zahlensystem-Konverter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Zahlensystem-Konverter</h1>
+  <p class="hint">Gib eine Zahl in einem beliebigen Feld ein — die anderen drei aktualisieren sich live.</p>
+
+  <div class="field">
+    <label for="binInput">Binär (Basis 2)</label>
+    <input type="text" id="binInput" inputmode="numeric" placeholder="z. B. 1010">
+  </div>
+  <div class="field">
+    <label for="octInput">Oktal (Basis 8)</label>
+    <input type="text" id="octInput" inputmode="numeric" placeholder="z. B. 12">
+  </div>
+  <div class="field">
+    <label for="decInput">Dezimal (Basis 10)</label>
+    <input type="text" id="decInput" inputmode="numeric" placeholder="z. B. 10">
+  </div>
+  <div class="field">
+    <label for="hexInput">Hexadezimal (Basis 16)</label>
+    <input type="text" id="hexInput" inputmode="text" placeholder="z. B. A">
+  </div>
+
+  <p id="error" class="error hidden" role="alert"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
