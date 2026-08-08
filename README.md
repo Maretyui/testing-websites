@@ -87,3 +87,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Number Base Converter <br>
   ---> Type into any of Binary/Octal/Decimal/Hex, the other three update live, with per-base input validation
   $${\color{lightgreen}Successful}$$
+* Caesar Cipher <br>
+  ---> Encrypt/decrypt text with an adjustable shift, plus a live brute-force view of all 26 possible shifts at once
+  $${\color{lightgreen}Successful}$$
