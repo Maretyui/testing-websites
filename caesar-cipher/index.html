@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cäsar-Chiffre</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Cäsar-Chiffre</h1>
+  <p class="hint">Text verschlüsseln/entschlüsseln mit einer Verschiebung, oder alle 26 Möglichkeiten auf einmal sehen.</p>
+
+  <div class="field">
+    <label for="textInput">Text</label>
+    <textarea id="textInput" rows="3" placeholder="z. B. Hallo Welt"></textarea>
+  </div>
+
+  <div class="row">
+    <div class="field shift-field">
+      <label for="shiftInput">Verschiebung</label>
+      <input type="number" id="shiftInput" value="3" min="-25" max="25">
+    </div>
+    <div class="buttons">
+      <button id="encryptBtn" type="button">Verschlüsseln</button>
+      <button id="decryptBtn" type="button">Entschlüsseln</button>
+    </div>
+  </div>
+
+  <div class="field">
+    <label for="outputText">Ergebnis</label>
+    <textarea id="outputText" rows="3" readonly placeholder="Ergebnis erscheint hier"></textarea>
+  </div>
+
+  <h2>Alle Verschiebungen (Brute Force)</h2>
+  <div id="bruteForce" class="brute-force"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
