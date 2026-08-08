@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schere, Stein, Papier</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Schere, Stein, Papier</h1>
+  <p class="hint">Spiel gegen den Computer. Dein Zug wird nie gespeichert oder vorhergesagt — jede Runde ist unabhängig.</p>
+
+  <div class="score">
+    <div class="score-item">
+      <span class="score-label">Du</span>
+      <span class="score-value" id="playerScore">0</span>
+    </div>
+    <div class="score-item">
+      <span class="score-label">Unentschieden</span>
+      <span class="score-value" id="tieScore">0</span>
+    </div>
+    <div class="score-item">
+      <span class="score-label">Computer</span>
+      <span class="score-value" id="computerScore">0</span>
+    </div>
+  </div>
+
+  <div class="choices">
+    <button type="button" class="choice-btn" data-choice="rock" aria-label="Stein">✊</button>
+    <button type="button" class="choice-btn" data-choice="paper" aria-label="Papier">✋</button>
+    <button type="button" class="choice-btn" data-choice="scissors" aria-label="Schere">✌️</button>
+  </div>
+
+  <div class="result" id="result" role="status">Wähle einen Zug, um zu starten.</div>
+
+  <div class="reveal" id="reveal"></div>
+
+  <button type="button" id="resetBtn" class="reset-btn">Punktestand zurücksetzen</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

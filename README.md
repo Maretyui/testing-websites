@@ -90,3 +90,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Caesar Cipher <br>
   ---> Encrypt/decrypt text with an adjustable shift, plus a live brute-force view of all 26 possible shifts at once
   $${\color{lightgreen}Successful}$$
+* Rock Paper Scissors <br>
+  ---> Play against the computer with running win/tie/loss score tracking, persisted only for the current session
+  $${\color{lightgreen}Successful}$$
