@@ -93,3 +93,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Rock Paper Scissors <br>
   ---> Play against the computer with running win/tie/loss score tracking, persisted only for the current session
   $${\color{lightgreen}Successful}$$
+* Todo List <br>
+  ---> Add, complete, filter (all/open/done) and clear tasks, persisted in localStorage
+  $${\color{lightgreen}Successful}$$

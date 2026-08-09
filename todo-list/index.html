@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Todo List</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Todo List</h1>
+  <p class="hint">Aufgaben hinzufügen, erledigen und filtern. Wird lokal im Browser gespeichert (localStorage).</p>
+
+  <form id="addForm" class="add-form">
+    <input type="text" id="taskInput" placeholder="Neue Aufgabe..." maxlength="140" autocomplete="off">
+    <button type="submit">Hinzufügen</button>
+  </form>
+
+  <div class="filters" role="group" aria-label="Filter">
+    <button type="button" class="filter-btn active" data-filter="all">Alle</button>
+    <button type="button" class="filter-btn" data-filter="active">Offen</button>
+    <button type="button" class="filter-btn" data-filter="completed">Erledigt</button>
+  </div>
+
+  <ul id="taskList" class="task-list"></ul>
+  <p id="emptyState" class="empty">Keine Aufgaben — leg los!</p>
+
+  <div class="footer-row">
+    <span id="countLabel" class="count-label">0 offen</span>
+    <button type="button" id="clearCompleted" class="clear-btn">Erledigte löschen</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
