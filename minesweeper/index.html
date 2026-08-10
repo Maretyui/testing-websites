@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minesweeper</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Minesweeper</h1>
+  <p class="hint">9×9 Feld, 10 Minen. Linksklick deckt auf, Rechtsklick markiert. Der erste Klick ist immer sicher.</p>
+
+  <div class="hud">
+    <div class="counter" id="mineCounter">10</div>
+    <button type="button" id="resetBtn" class="reset-btn" aria-label="Neu starten">🙂</button>
+    <div class="counter" id="timer">000</div>
+  </div>
+
+  <div id="board" class="board" role="grid" aria-label="Minenfeld"></div>
+
+  <p id="statusMsg" class="status hidden" role="status"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
