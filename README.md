@@ -96,3 +96,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Todo List <br>
   ---> Add, complete, filter (all/open/done) and clear tasks, persisted in localStorage
   $${\color{lightgreen}Successful}$$
+* BMI Calculator <br>
+  ---> Metric/imperial toggle, live BMI value, category and a color-coded scale marker as you type
+  $${\color{lightgreen}Successful}$$
