@@ -99,3 +99,6 @@ On here, you can find testing websites. I test different things over time, and u
 * BMI Calculator <br>
   ---> Metric/imperial toggle, live BMI value, category and a color-coded scale marker as you type
   $${\color{lightgreen}Successful}$$
+* Minesweeper <br>
+  ---> Classic 9×9/10-mine board, first click always safe, flood-fill reveal and right-click flagging
+  $${\color{lightgreen}Successful}$$
