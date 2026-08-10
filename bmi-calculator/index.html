@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BMI Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>BMI Calculator</h1>
+  <p class="hint">Berechnet den Body-Mass-Index live, sobald Größe und Gewicht eingegeben sind.</p>
+
+  <div class="unit-toggle" role="group" aria-label="Einheiten">
+    <button type="button" id="metricBtn" class="unit-btn active">Metrisch</button>
+    <button type="button" id="imperialBtn" class="unit-btn">Imperial</button>
+  </div>
+
+  <div class="panes" id="metricPanes">
+    <label class="pane">
+      Größe (cm)
+      <input type="number" id="heightCm" min="1" placeholder="z. B. 178">
+    </label>
+    <label class="pane">
+      Gewicht (kg)
+      <input type="number" id="weightKg" min="1" step="0.1" placeholder="z. B. 72">
+    </label>
+  </div>
+
+  <div class="panes hidden" id="imperialPanes">
+    <label class="pane">
+      Größe (in)
+      <input type="number" id="heightIn" min="1" placeholder="z. B. 70">
+    </label>
+    <label class="pane">
+      Gewicht (lb)
+      <input type="number" id="weightLb" min="1" step="0.1" placeholder="z. B. 160">
+    </label>
+  </div>
+
+  <div id="result" class="result hidden">
+    <span class="bmi-value" id="bmiValue"></span>
+    <span class="bmi-category" id="bmiCategory"></span>
+    <div class="bmi-scale">
+      <div class="bmi-marker" id="bmiMarker"></div>
+    </div>
+  </div>
+
+  <div id="errorMsg" class="error hidden" role="alert"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
