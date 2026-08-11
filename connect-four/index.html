@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4 Gewinnt</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>4 Gewinnt</h1>
+  <p class="hint">Rein clientseitig, zwei Spieler am selben Gerät. Klicke auf eine Spalte, um einen Stein einzuwerfen.</p>
+
+  <p class="status" id="status">Rot ist am Zug</p>
+
+  <div class="board" id="board" role="grid" aria-label="Spielfeld"></div>
+
+  <div class="scoreboard" id="scoreboard">
+    <div class="score-item">
+      <span class="score-label">Rot</span>
+      <span class="score-value" id="scoreRed">0</span>
+    </div>
+    <div class="score-item">
+      <span class="score-label">Unentschieden</span>
+      <span class="score-value" id="scoreDraw">0</span>
+    </div>
+    <div class="score-item">
+      <span class="score-label">Gelb</span>
+      <span class="score-value" id="scoreYellow">0</span>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button type="button" id="newRoundBtn">Neue Runde</button>
+    <button type="button" id="resetScoreBtn">Punktestand zurücksetzen</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
