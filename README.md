@@ -102,3 +102,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Minesweeper <br>
   ---> Classic 9×9/10-mine board, first click always safe, flood-fill reveal and right-click flagging
   $${\color{lightgreen}Successful}$$
+* Connect Four <br>
+  ---> Classic 7×6 drop-a-disc game for two players, full win detection in all four directions plus a scoreboard
+  $${\color{lightgreen}Successful}$$
