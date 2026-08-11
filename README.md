@@ -105,3 +105,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Connect Four <br>
   ---> Classic 7×6 drop-a-disc game for two players, full win detection in all four directions plus a scoreboard
   $${\color{lightgreen}Successful}$$
+* Expense Splitter <br>
+  ---> Add people and shared expenses, get a minimal list of who-pays-whom via a greedy debtor/creditor settlement
+  $${\color{lightgreen}Successful}$$

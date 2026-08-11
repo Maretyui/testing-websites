@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kostenteiler</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Kostenteiler</h1>
+  <p class="hint">Trage Personen und Ausgaben ein &mdash; jede Ausgabe wird gleichmäßig auf alle aufgeteilt. Am Ende siehst du, wer wem wie viel zahlen muss.</p>
+
+  <section class="block">
+    <h2>Personen</h2>
+    <form id="personForm" class="inline-form">
+      <input type="text" id="personName" placeholder="Name" required autocomplete="off">
+      <button type="submit">Hinzufügen</button>
+    </form>
+    <ul class="chip-list" id="personList"></ul>
+  </section>
+
+  <section class="block">
+    <h2>Ausgaben</h2>
+    <form id="expenseForm" class="expense-form">
+      <select id="expensePayer" required></select>
+      <input type="text" id="expenseDesc" placeholder="Wofür?" required autocomplete="off">
+      <input type="number" id="expenseAmount" placeholder="Betrag (€)" min="0.01" step="0.01" required>
+      <button type="submit">Eintragen</button>
+    </form>
+    <ul class="expense-list" id="expenseList"></ul>
+  </section>
+
+  <section class="block">
+    <h2>Ausgleich</h2>
+    <p class="empty-hint" id="settleEmpty">Noch keine Ausgaben oder zu wenige Personen.</p>
+    <ul class="settle-list" id="settleList"></ul>
+  </section>
+
+  <div class="actions">
+    <button type="button" id="resetBtn">Alles zurücksetzen</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
