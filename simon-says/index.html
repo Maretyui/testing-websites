@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Merkspiel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Merkspiel</h1>
+  <p class="hint">Merke dir die aufleuchtende Farbfolge und wiederhole sie in der gleichen Reihenfolge. Mit jeder Runde wird die Folge um ein Feld länger.</p>
+
+  <div class="status-row">
+    <span class="status" id="statusText">Bereit</span>
+    <span class="score">Runde: <strong id="roundCount">0</strong></span>
+    <span class="score">Highscore: <strong id="highscore">0</strong></span>
+  </div>
+
+  <div class="board" id="board" aria-label="Spielfeld">
+    <button class="pad pad-green" data-color="green" aria-label="Grün"></button>
+    <button class="pad pad-red" data-color="red" aria-label="Rot"></button>
+    <button class="pad pad-yellow" data-color="yellow" aria-label="Gelb"></button>
+    <button class="pad pad-blue" data-color="blue" aria-label="Blau"></button>
+  </div>
+
+  <div class="actions">
+    <button type="button" id="startBtn">Spiel starten</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

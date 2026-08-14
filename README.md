@@ -108,3 +108,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Expense Splitter <br>
   ---> Add people and shared expenses, get a minimal list of who-pays-whom via a greedy debtor/creditor settlement
   $${\color{lightgreen}Successful}$$
+* Simon Says (Merkspiel) <br>
+  ---> Classic color-sequence memory game, sequence grows by one each round, localStorage-backed highscore
+  $${\color{lightgreen}Successful}$$

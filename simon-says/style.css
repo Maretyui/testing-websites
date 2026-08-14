@@ -1,0 +1,114 @@
+:root {
+  color-scheme: dark;
+  --bg: #0f1115;
+  --card: #191c22;
+  --text: #eef0f4;
+  --muted: #9aa1ac;
+  --accent: #6c7cff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+}
+
+.hint {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0 0 1.5rem;
+}
+
+.status-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  background: var(--card);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.status {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.score strong {
+  color: var(--text);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  aspect-ratio: 1;
+  margin: 0 auto 1.5rem;
+}
+
+.pad {
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  opacity: 0.55;
+  transition: opacity 0.1s ease, transform 0.1s ease;
+}
+
+.pad:active {
+  transform: scale(0.97);
+}
+
+.pad.lit {
+  opacity: 1;
+  box-shadow: 0 0 24px currentColor;
+}
+
+.pad-green { background: #2ecc71; color: #2ecc71; border-radius: 16px 4px 4px 4px; }
+.pad-red { background: #e74c3c; color: #e74c3c; border-radius: 4px 16px 4px 4px; }
+.pad-yellow { background: #f1c40f; color: #f1c40f; border-radius: 4px 4px 4px 16px; }
+.pad-blue { background: #3498db; color: #3498db; border-radius: 4px 4px 16px 4px; }
+
+.pad:disabled {
+  cursor: not-allowed;
+}
+
+.actions button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  filter: brightness(1.1);
+}
+
+.actions button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
