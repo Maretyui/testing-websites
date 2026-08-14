@@ -111,3 +111,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Simon Says (Merkspiel) <br>
   ---> Classic color-sequence memory game, sequence grows by one each round, localStorage-backed highscore
   $${\color{lightgreen}Successful}$$
+* Galgenmännchen (Hangman) <br>
+  ---> Guess the German word letter by letter, click or type, animated SVG gallows fills in on wrong guesses
+  $${\color{lightgreen}Successful}$$
