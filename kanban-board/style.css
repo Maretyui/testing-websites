@@ -1,0 +1,130 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #f4f5f7;
+  color: #172b4d;
+  padding: 2rem 1rem 4rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0 0 0.25rem;
+}
+
+.hint {
+  color: #5e6c84;
+  margin: 0 0 1.5rem;
+  font-size: 0.9rem;
+}
+
+.add-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.add-form input {
+  flex: 1;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #dfe1e6;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.add-form button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  background: #0052cc;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.add-form button:hover {
+  background: #0747a6;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 700px) {
+  .board {
+    grid-template-columns: 1fr;
+  }
+}
+
+.column {
+  background: #ebecf0;
+  border-radius: 8px;
+  padding: 0.75rem;
+  min-height: 200px;
+}
+
+.column.drag-over {
+  outline: 2px dashed #0052cc;
+  outline-offset: -4px;
+}
+
+.column h2 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #5e6c84;
+  margin: 0.25rem 0 0.75rem;
+}
+
+.task-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-height: 40px;
+}
+
+.task {
+  background: #fff;
+  border-radius: 6px;
+  padding: 0.6rem 0.7rem;
+  box-shadow: 0 1px 2px rgba(9, 30, 66, 0.25);
+  cursor: grab;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.task.dragging {
+  opacity: 0.4;
+}
+
+.task .text {
+  flex: 1;
+  word-break: break-word;
+  font-size: 0.92rem;
+}
+
+.task .remove {
+  border: none;
+  background: transparent;
+  color: #97a0af;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0;
+}
+
+.task .remove:hover {
+  color: #de350b;
+}

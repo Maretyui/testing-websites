@@ -114,3 +114,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Galgenmännchen (Hangman) <br>
   ---> Guess the German word letter by letter, click or type, animated SVG gallows fills in on wrong guesses
   $${\color{lightgreen}Successful}$$
+* Kanban Board <br>
+  ---> Add tasks and drag them between To Do/Doing/Done columns, persisted in localStorage
+  $${\color{lightgreen}Successful}$$
