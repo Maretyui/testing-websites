@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kanban Board</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Kanban Board</h1>
+  <p class="hint">Add a task, then drag it between columns. Everything is saved in localStorage.</p>
+
+  <form id="addForm" class="add-form">
+    <input type="text" id="taskInput" placeholder="New task…" autocomplete="off" required>
+    <button type="submit">Add</button>
+  </form>
+
+  <div class="board" id="board">
+    <section class="column" data-status="todo" aria-label="To Do column">
+      <h2>To Do</h2>
+      <ul class="task-list" id="list-todo"></ul>
+    </section>
+    <section class="column" data-status="doing" aria-label="Doing column">
+      <h2>Doing</h2>
+      <ul class="task-list" id="list-doing"></ul>
+    </section>
+    <section class="column" data-status="done" aria-label="Done column">
+      <h2>Done</h2>
+      <ul class="task-list" id="list-done"></ul>
+    </section>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
