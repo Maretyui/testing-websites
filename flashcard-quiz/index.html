@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flashcard Quiz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Flashcard Quiz</h1>
+  <p class="hint">Click a card to flip it, then mark whether you got it right. Missed cards come back around at the end of the deck.</p>
+
+  <div class="deck-select">
+    <label for="deckSelect">Deck:</label>
+    <select id="deckSelect"></select>
+  </div>
+
+  <div class="progress" id="progress" aria-live="polite"></div>
+
+  <div class="card-stage">
+    <button type="button" class="flashcard" id="flashcard" aria-live="polite">
+      <div class="face front" id="front"></div>
+      <div class="face back" id="back"></div>
+    </button>
+  </div>
+
+  <div class="actions" id="actions">
+    <button type="button" id="hardBtn" class="hard">Didn't know it</button>
+    <button type="button" id="easyBtn" class="easy">Knew it</button>
+  </div>
+
+  <p class="done-message" id="doneMessage" hidden></p>
+  <button type="button" id="restartBtn" class="restart" hidden>Restart deck</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

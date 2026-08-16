@@ -117,3 +117,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Kanban Board <br>
   ---> Add tasks and drag them between To Do/Doing/Done columns, persisted in localStorage
   $${\color{lightgreen}Successful}$$
+* Flashcard Quiz <br>
+  ---> Flip-to-reveal study cards across multiple decks, missed cards recycle back into the pass
+  $${\color{lightgreen}Successful}$$

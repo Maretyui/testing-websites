@@ -1,0 +1,140 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #14161b;
+  color: #eef0f4;
+  padding: 2rem 1rem 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 { margin: 0 0 0.25rem; }
+
+.hint {
+  color: #9099ab;
+  font-size: 0.9rem;
+  margin: 0 0 1.25rem;
+}
+
+.deck-select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.deck-select select {
+  padding: 0.35rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #333a47;
+  background: #1e2129;
+  color: #eef0f4;
+}
+
+.progress {
+  color: #9099ab;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.card-stage {
+  perspective: 1200px;
+  margin-bottom: 1.5rem;
+}
+
+.flashcard {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.flashcard .face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border-radius: 14px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  backface-visibility: hidden;
+  transition: transform 0.5s;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.flashcard .front {
+  background: #1e2129;
+  border: 1px solid #333a47;
+  transform: rotateY(0deg);
+}
+
+.flashcard .back {
+  background: #143c34;
+  border: 1px solid #1c5a4c;
+  color: #b6f5df;
+  transform: rotateY(180deg);
+}
+
+.flashcard.flipped .front { transform: rotateY(-180deg); }
+.flashcard.flipped .back { transform: rotateY(0deg); }
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.actions button {
+  flex: 1;
+  max-width: 200px;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.actions button.hard {
+  background: #3a1f22;
+  color: #f5b6bc;
+}
+.actions button.hard:hover { background: #4a262a; }
+
+.actions button.easy {
+  background: #143c34;
+  color: #b6f5df;
+}
+.actions button.easy:hover { background: #1a4c42; }
+
+.actions[hidden] { display: none; }
+
+.done-message {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.restart {
+  margin-top: 0.75rem;
+  padding: 0.6rem 1.25rem;
+  border-radius: 8px;
+  border: 1px solid #333a47;
+  background: #1e2129;
+  color: #eef0f4;
+  cursor: pointer;
+}
+.restart:hover { border-color: #14b8a6; color: #14b8a6; }
