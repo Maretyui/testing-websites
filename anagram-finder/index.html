@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anagramm-Finder</title>
+<link rel="stylesheet" href="style.css">
+<meta http-equiv="Content-Security-Policy" content="script-src 'self'">
+</head>
+<body>
+<div class="container">
+    <h1>Anagramm-Finder</h1>
+    <p class="subtitle">Gib ein Wort ein und finde alle anderen Wörter aus der Liste, die dieselben Buchstaben verwenden.</p>
+
+    <div class="input-row">
+        <input type="text" id="word-input" placeholder="z.B. Ohren" autocomplete="off">
+        <button id="find-button">Suchen</button>
+    </div>
+
+    <div id="result-area" class="result-area" hidden>
+        <p id="result-summary"></p>
+        <ul id="result-list"></ul>
+    </div>
+
+    <details class="wordlist-details">
+        <summary>Eigene Wortliste verwenden</summary>
+        <textarea id="wordlist-input" rows="6" spellcheck="false"></textarea>
+        <p class="hint">Ein Wort pro Zeile. Leer lassen, um die eingebaute Standardliste zu nutzen.</p>
+    </details>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

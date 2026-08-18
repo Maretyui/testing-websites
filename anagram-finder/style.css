@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3rem 1rem;
+    background: #101418;
+    color: #e7ecf1;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 32rem;
+}
+
+h1 {
+    margin: 0 0 0.5rem;
+    font-size: 1.9rem;
+}
+
+.subtitle {
+    margin: 0 0 1.5rem;
+    color: #9aa7b4;
+    line-height: 1.4;
+}
+
+.input-row {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#word-input {
+    flex: 1;
+    padding: 0.7rem 0.9rem;
+    border-radius: 0.5rem;
+    border: 1px solid #2c3641;
+    background: #1a2129;
+    color: inherit;
+    font-size: 1rem;
+}
+
+#word-input:focus {
+    outline: 2px solid #4f8cff;
+    outline-offset: 1px;
+}
+
+#find-button {
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: #4f8cff;
+    color: #0b1220;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#find-button:hover {
+    background: #6b9fff;
+}
+
+.result-area {
+    background: #161c23;
+    border: 1px solid #232c36;
+    border-radius: 0.6rem;
+    padding: 1rem 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+#result-summary {
+    margin: 0 0 0.6rem;
+    color: #9aa7b4;
+}
+
+#result-list {
+    margin: 0;
+    padding-left: 1.2rem;
+    line-height: 1.7;
+}
+
+.wordlist-details summary {
+    cursor: pointer;
+    color: #9aa7b4;
+    margin-bottom: 0.6rem;
+}
+
+#wordlist-input {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    border: 1px solid #2c3641;
+    background: #1a2129;
+    color: inherit;
+    font-family: ui-monospace, monospace;
+    resize: vertical;
+}
+
+.hint {
+    margin: 0.4rem 0 0;
+    font-size: 0.85rem;
+    color: #6b7784;
+}

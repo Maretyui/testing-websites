@@ -120,3 +120,9 @@ On here, you can find testing websites. I test different things over time, and u
 * Flashcard Quiz <br>
   ---> Flip-to-reveal study cards across multiple decks, missed cards recycle back into the pass
   $${\color{lightgreen}Successful}$$
+* Anagramm-Finder <br>
+  ---> Type a word, find every other word in the list sharing the same letters (built-in German word list, or paste your own)
+  $${\color{lightgreen}Successful}$$
+* Binäruhr <br>
+  ---> Live binary clock, each digit of HH:MM:SS shown as a BCD 8-4-2-1 bit column
+  $${\color{lightgreen}Successful}$$
