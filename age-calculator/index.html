@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Age Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Age Calculator</h1>
+  <p class="hint">Gib ein Geburtsdatum ein und erfahre dein genaues Alter sowie die Zeit bis zum nächsten Geburtstag.</p>
+
+  <label for="birthdateInput">Geburtsdatum</label>
+  <input type="date" id="birthdateInput">
+
+  <div id="result" class="result hidden">
+    <div class="age-grid">
+      <div class="age-cell">
+        <span class="age-value" id="yearsValue">0</span>
+        <span class="age-label">Jahre</span>
+      </div>
+      <div class="age-cell">
+        <span class="age-value" id="monthsValue">0</span>
+        <span class="age-label">Monate</span>
+      </div>
+      <div class="age-cell">
+        <span class="age-value" id="daysValue">0</span>
+        <span class="age-label">Tage</span>
+      </div>
+    </div>
+    <p class="detail" id="totalDaysText"></p>
+    <p class="detail" id="nextBirthdayText"></p>
+  </div>
+  <p id="emptyState" class="empty">Noch kein Datum ausgewählt.</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

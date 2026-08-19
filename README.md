@@ -126,3 +126,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Binäruhr <br>
   ---> Live binary clock, each digit of HH:MM:SS shown as a BCD 8-4-2-1 bit column
   $${\color{lightgreen}Successful}$$
+* Age Calculator <br>
+  ---> Pick a birthdate, get exact years/months/days lived plus a countdown to the next birthday
+  $${\color{lightgreen}Successful}$$
