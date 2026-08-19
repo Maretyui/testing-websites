@@ -129,3 +129,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Age Calculator <br>
   ---> Pick a birthdate, get exact years/months/days lived plus a countdown to the next birthday
   $${\color{lightgreen}Successful}$$
+* Resistor Color Code Calculator <br>
+  ---> Pick 4 color bands to read the resistance value live, or enter a value to find the matching bands
+  $${\color{lightgreen}Successful}$$
