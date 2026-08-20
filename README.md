@@ -135,3 +135,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Wordle-Klon <br>
   ---> Guess a 5-letter German word in 6 tries, color-coded tiles and an on-screen QWERTZ keyboard that tracks guessed letters
   $${\color{lightgreen}Successful}$$
+* Tip Calculator <br>
+  ---> Bill amount + tip % (presets or custom) + people count, live tip/total/per-person breakdown
+  $${\color{lightgreen}Successful}$$

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trinkgeld-Rechner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Trinkgeld-Rechner</h1>
+  <p class="hint">Rechnungsbetrag, Trinkgeld und Personenzahl eingeben — Gesamtbetrag und Anteil pro Person werden live berechnet.</p>
+
+  <label class="field">
+    Rechnungsbetrag (€)
+    <input type="number" id="billInput" min="0" step="0.01" placeholder="z. B. 45.90">
+  </label>
+
+  <div class="tip-select">
+    <span class="field-label">Trinkgeld</span>
+    <div class="tip-buttons" id="tipButtons">
+      <button type="button" data-tip="10">10 %</button>
+      <button type="button" data-tip="15" class="active">15 %</button>
+      <button type="button" data-tip="18">18 %</button>
+      <button type="button" data-tip="20">20 %</button>
+      <button type="button" data-tip="25">25 %</button>
+    </div>
+    <label class="field custom-tip">
+      Eigener Wert (%)
+      <input type="number" id="customTipInput" min="0" step="1" placeholder="z. B. 12">
+    </label>
+  </div>
+
+  <label class="field">
+    Anzahl Personen
+    <div class="stepper">
+      <button type="button" id="decreasePeople" aria-label="Weniger Personen">−</button>
+      <span id="peopleDisplay">1</span>
+      <button type="button" id="increasePeople" aria-label="Mehr Personen">+</button>
+    </div>
+  </label>
+
+  <div class="results">
+    <div class="result-row">
+      <span>Trinkgeld gesamt</span>
+      <strong id="tipAmount">0,00 €</strong>
+    </div>
+    <div class="result-row">
+      <span>Gesamtbetrag</span>
+      <strong id="totalAmount">0,00 €</strong>
+    </div>
+    <div class="result-row highlight">
+      <span>Pro Person</span>
+      <strong id="perPersonAmount">0,00 €</strong>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
