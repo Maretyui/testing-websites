@@ -132,3 +132,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Resistor Color Code Calculator <br>
   ---> Pick 4 color bands to read the resistance value live, or enter a value to find the matching bands
   $${\color{lightgreen}Successful}$$
+* Wordle-Klon <br>
+  ---> Guess a 5-letter German word in 6 tries, color-coded tiles and an on-screen QWERTZ keyboard that tracks guessed letters
+  $${\color{lightgreen}Successful}$$

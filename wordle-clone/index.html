@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wordle-Klon</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Wordle-Klon</h1>
+  <p class="hint">Errate das 5-Buchstaben-Wort in 6 Versuchen. Grün = richtiger Buchstabe an richtiger Stelle, Gelb = Buchstabe kommt vor, aber woanders, Grau = kommt nicht vor.</p>
+
+  <div class="board" id="board" aria-live="polite"></div>
+
+  <p class="message" id="messageDisplay" role="alert"></p>
+
+  <div class="keyboard" id="keyboard" aria-label="Tastatur"></div>
+
+  <div class="actions">
+    <button type="button" id="newWordBtn">Neues Wort</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
