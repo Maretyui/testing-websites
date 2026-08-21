@@ -138,3 +138,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Tip Calculator <br>
   ---> Bill amount + tip % (presets or custom) + people count, live tip/total/per-person breakdown
   $${\color{lightgreen}Successful}$$
+* Schachuhr (Chess Clock) <br>
+  ---> Two-player countdown clock with configurable time + per-move increment, click your own side to pass the turn
+  $${\color{lightgreen}Successful}$$

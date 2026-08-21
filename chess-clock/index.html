@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schachuhr</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Schachuhr</h1>
+  <p class="hint">Zeit pro Spieler einstellen, dann per Klick auf die eigene Anzeige den Zug an den Gegner übergeben.</p>
+
+  <div class="setup" id="setup">
+    <label>
+      Minuten pro Spieler
+      <input type="number" id="minutesInput" value="5" min="1" max="60" step="1">
+    </label>
+    <label>
+      Inkrement pro Zug (Sek.)
+      <input type="number" id="incrementInput" value="0" min="0" max="60" step="1">
+    </label>
+    <button id="startBtn" type="button">Uhr starten</button>
+  </div>
+
+  <div class="board hidden" id="board">
+    <button class="clock" id="clockA" type="button" aria-label="Spieler A Zug übergeben">
+      <span class="label">Spieler A</span>
+      <span class="time" id="timeA">05:00</span>
+    </button>
+    <button class="clock" id="clockB" type="button" aria-label="Spieler B Zug übergeben">
+      <span class="label">Spieler B</span>
+      <span class="time" id="timeB">05:00</span>
+    </button>
+  </div>
+
+  <div class="controls hidden" id="controls">
+    <button id="pauseBtn" type="button">Pause</button>
+    <button id="resetBtn" type="button">Zurücksetzen</button>
+  </div>
+
+  <p class="status" id="status" role="status" aria-live="polite"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
