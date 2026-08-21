@@ -141,3 +141,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Schachuhr (Chess Clock) <br>
   ---> Two-player countdown clock with configurable time + per-move increment, click your own side to pass the turn
   $${\color{lightgreen}Successful}$$
+* Team-Generator <br>
+  ---> Paste a list of names, pick a team count, get a randomly and evenly split set of teams
+  $${\color{lightgreen}Successful}$$

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team-Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Team-Generator</h1>
+  <p class="hint">Einen Namen pro Zeile eintragen, Teamanzahl wählen und zufällig gleichmäßig aufteilen lassen.</p>
+
+  <label class="field">
+    Namen (ein Name pro Zeile)
+    <textarea id="namesInput" rows="8" placeholder="Anna&#10;Ben&#10;Chris&#10;Dana&#10;Erik&#10;Fabi"></textarea>
+  </label>
+
+  <label class="field inline">
+    Anzahl Teams
+    <input type="number" id="teamCountInput" value="2" min="2" max="12" step="1">
+  </label>
+
+  <button id="generateBtn" type="button">Teams auslosen</button>
+  <p class="error" id="errorText" role="alert"></p>
+
+  <div class="teams" id="teamsOutput"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
