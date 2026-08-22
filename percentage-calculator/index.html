@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Percentage Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Percentage Calculator</h1>
+  <p class="hint">Drei häufige Prozentrechnungen an einem Ort — Tab wechseln, Zahlen eingeben, Ergebnis erscheint live.</p>
+
+  <div class="tabs" role="tablist">
+    <button class="tab active" data-mode="of" role="tab" aria-selected="true">X% von Y</button>
+    <button class="tab" data-mode="what" role="tab" aria-selected="false">X ist wie viel % von Y</button>
+    <button class="tab" data-mode="change" role="tab" aria-selected="false">% Veränderung</button>
+  </div>
+
+  <div class="mode" id="mode-of">
+    <label>
+      Prozentsatz
+      <input type="number" id="ofPercent" placeholder="z. B. 15" inputmode="decimal">
+    </label>
+    <span class="op">% von</span>
+    <label>
+      Wert
+      <input type="number" id="ofValue" placeholder="z. B. 240" inputmode="decimal">
+    </label>
+  </div>
+
+  <div class="mode hidden" id="mode-what">
+    <label>
+      Teilwert
+      <input type="number" id="whatPart" placeholder="z. B. 36" inputmode="decimal">
+    </label>
+    <span class="op">ist wie viel % von</span>
+    <label>
+      Gesamtwert
+      <input type="number" id="whatWhole" placeholder="z. B. 240" inputmode="decimal">
+    </label>
+  </div>
+
+  <div class="mode hidden" id="mode-change">
+    <label>
+      Von
+      <input type="number" id="changeFrom" placeholder="z. B. 80" inputmode="decimal">
+    </label>
+    <span class="op">nach</span>
+    <label>
+      Zu
+      <input type="number" id="changeTo" placeholder="z. B. 100" inputmode="decimal">
+    </label>
+  </div>
+
+  <p id="result" class="result">Ergebnis erscheint hier.</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -144,3 +144,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Team-Generator <br>
   ---> Paste a list of names, pick a team count, get a randomly and evenly split set of teams
   $${\color{lightgreen}Successful}$$
+* Percentage Calculator <br>
+  ---> Three tabbed modes: X% of Y, X is what % of Y, and % change from X to Y — live result as you type
+  $${\color{lightgreen}Successful}$$
