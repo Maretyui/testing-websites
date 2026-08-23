@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vigenère Cipher</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Vigenère Cipher</h1>
+  <p class="hint">Wie die Caesar-Verschlüsselung, aber mit einem Schlüsselwort statt einer festen Verschiebung — jeder Buchstabe bekommt seine eigene Verschiebung.</p>
+
+  <div class="tabs" role="tablist">
+    <button class="tab active" data-mode="encrypt" role="tab" aria-selected="true">Verschlüsseln</button>
+    <button class="tab" data-mode="decrypt" role="tab" aria-selected="false">Entschlüsseln</button>
+  </div>
+
+  <label class="field">
+    Schlüsselwort
+    <input type="text" id="key" placeholder="z. B. SCHLUESSEL">
+  </label>
+
+  <label class="field">
+    Text
+    <textarea id="text" rows="4" placeholder="Text hier eingeben..."></textarea>
+  </label>
+
+  <p class="result-label">Ergebnis</p>
+  <textarea id="output" rows="4" readonly></textarea>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

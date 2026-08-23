@@ -150,3 +150,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Palindrome Checker <br>
   ---> Type any word or sentence, case/spaces/punctuation ignored, plus a live longest-palindromic-substring finder
   $${\color{lightgreen}Successful}$$
+* Vigenère Cipher <br>
+  ---> Encrypt/decrypt with a keyword instead of a fixed Caesar shift, each letter gets its own offset
+  $${\color{lightgreen}Successful}$$
