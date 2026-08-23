@@ -147,3 +147,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Percentage Calculator <br>
   ---> Three tabbed modes: X% of Y, X is what % of Y, and % change from X to Y — live result as you type
   $${\color{lightgreen}Successful}$$
+* Palindrome Checker <br>
+  ---> Type any word or sentence, case/spaces/punctuation ignored, plus a live longest-palindromic-substring finder
+  $${\color{lightgreen}Successful}$$
