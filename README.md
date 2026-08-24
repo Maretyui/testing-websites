@@ -153,3 +153,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Vigenère Cipher <br>
   ---> Encrypt/decrypt with a keyword instead of a fixed Caesar shift, each letter gets its own offset
   $${\color{lightgreen}Successful}$$
+* Zinseszins-Rechner (Compound Interest Calculator) <br>
+  ---> Startkapital, Zinssatz, Laufzeit und optionale monatliche Sparrate — Endkapital und Zinsertrag live, mit wählbarer Zinsperiode
+  $${\color{lightgreen}Successful}$$
