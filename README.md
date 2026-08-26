@@ -156,3 +156,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Zinseszins-Rechner (Compound Interest Calculator) <br>
   ---> Startkapital, Zinssatz, Laufzeit und optionale monatliche Sparrate — Endkapital und Zinsertrag live, mit wählbarer Zinsperiode
   $${\color{lightgreen}Successful}$$
+* Kredit-Tilgungsrechner (Loan Amortization Calculator) <br>
+  ---> Darlehensbetrag, Zinssatz und Laufzeit eingeben — monatliche Rate, Gesamtzinsen und ein Tilgungsplan der ersten 12 Monate live berechnet
+  $${\color{lightgreen}Successful}$$
