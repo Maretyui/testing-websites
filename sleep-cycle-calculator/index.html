@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schlafrechner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Schlafrechner</h1>
+  <p class="hint">Ein Schlafzyklus dauert im Schnitt 90 Minuten — am besten aufwachen lässt es sich am Ende eines vollen Zyklus, nicht mittendrin. Wähle einen Modus und eine Uhrzeit.</p>
+
+  <div class="mode-select" id="modeButtons">
+    <button type="button" data-mode="bedtime" class="active">Ich gehe jetzt schlafen</button>
+    <button type="button" data-mode="wake">Ich will aufwachen um</button>
+  </div>
+
+  <label class="field">
+    <span id="timeLabel">Aufwachzeit</span>
+    <input type="time" id="timeInput">
+  </label>
+
+  <label class="field">
+    Minuten zum Einschlafen
+    <input type="number" id="fallAsleepInput" min="0" step="1" value="15">
+  </label>
+
+  <div class="results" id="results" aria-live="polite"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

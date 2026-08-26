@@ -159,3 +159,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Kredit-Tilgungsrechner (Loan Amortization Calculator) <br>
   ---> Darlehensbetrag, Zinssatz und Laufzeit eingeben — monatliche Rate, Gesamtzinsen und ein Tilgungsplan der ersten 12 Monate live berechnet
   $${\color{lightgreen}Successful}$$
+* Schlafrechner (Sleep Cycle Calculator) <br>
+  ---> Bett- oder Aufwachzeit eingeben, passende Gegenzeiten in vollen 90-Minuten-Schlafzyklen (3–6 Zyklen) werden berechnet
+  $${\color{lightgreen}Successful}$$
