@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kredit-Tilgungsrechner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Kredit-Tilgungsrechner</h1>
+  <p class="hint">Darlehensbetrag, Zinssatz und Laufzeit eingeben — monatliche Rate, Gesamtzinsen und ein Tilgungsplan der ersten 12 Monate werden live berechnet.</p>
+
+  <label class="field">
+    Darlehensbetrag (€)
+    <input type="number" id="principalInput" min="0" step="100" value="20000">
+  </label>
+
+  <label class="field">
+    Zinssatz p. a. (%)
+    <input type="number" id="rateInput" min="0" step="0.1" value="4.5">
+  </label>
+
+  <label class="field">
+    Laufzeit (Jahre)
+    <input type="number" id="yearsInput" min="1" step="1" value="10">
+  </label>
+
+  <div class="results">
+    <div class="result-row highlight">
+      <span>Monatliche Rate</span>
+      <strong id="monthlyPayment">0,00 €</strong>
+    </div>
+    <div class="result-row">
+      <span>Gesamtzinsen</span>
+      <strong id="totalInterest">0,00 €</strong>
+    </div>
+    <div class="result-row">
+      <span>Gesamtsumme</span>
+      <strong id="totalPaid">0,00 €</strong>
+    </div>
+  </div>
+
+  <table class="schedule" id="schedule" aria-label="Tilgungsplan der ersten 12 Monate">
+    <thead>
+      <tr><th scope="col">Monat</th><th scope="col">Zins</th><th scope="col">Tilgung</th><th scope="col">Restschuld</th></tr>
+    </thead>
+    <tbody id="scheduleBody"></tbody>
+  </table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
