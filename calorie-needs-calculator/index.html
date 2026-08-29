@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalorienbedarf-Rechner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Kalorienbedarf-Rechner</h1>
+  <p class="hint">Grundumsatz (Mifflin-St Jeor Formel) plus Aktivitätsfaktor ergeben deinen täglichen Gesamtumsatz — live berechnet, während du tippst.</p>
+
+  <div class="mode-select" id="genderButtons">
+    <button type="button" data-gender="female" class="active">Weiblich</button>
+    <button type="button" data-gender="male">Männlich</button>
+  </div>
+
+  <label class="field">
+    Alter (Jahre)
+    <input type="number" id="ageInput" min="10" max="100" step="1" value="30">
+  </label>
+
+  <label class="field">
+    Größe (cm)
+    <input type="number" id="heightInput" min="100" max="250" step="1" value="175">
+  </label>
+
+  <label class="field">
+    Gewicht (kg)
+    <input type="number" id="weightInput" min="30" max="250" step="0.5" value="70">
+  </label>
+
+  <label class="field">
+    Aktivitätslevel
+    <select id="activityInput">
+      <option value="1.2">Sitzend (kaum Bewegung)</option>
+      <option value="1.375">Leicht aktiv (1-3x Sport/Woche)</option>
+      <option value="1.55" selected>Mäßig aktiv (3-5x Sport/Woche)</option>
+      <option value="1.725">Sehr aktiv (6-7x Sport/Woche)</option>
+      <option value="1.9">Extrem aktiv (körperliche Arbeit + Sport)</option>
+    </select>
+  </label>
+
+  <div class="results" id="results" aria-live="polite"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
