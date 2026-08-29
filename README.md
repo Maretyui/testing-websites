@@ -162,3 +162,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Schlafrechner (Sleep Cycle Calculator) <br>
   ---> Bett- oder Aufwachzeit eingeben, passende Gegenzeiten in vollen 90-Minuten-Schlafzyklen (3–6 Zyklen) werden berechnet
   $${\color{lightgreen}Successful}$$
+* Kalorienbedarf-Rechner (Calorie Needs Calculator) <br>
+  ---> Alter, Größe, Gewicht und Aktivitätslevel eingeben — Grundumsatz (Mifflin-St Jeor) und Gesamtumsatz live berechnet, inkl. Richtwerte zum Ab-/Zunehmen
+  $${\color{lightgreen}Successful}$$
