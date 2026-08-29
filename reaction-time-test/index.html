@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reaktionstest</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Reaktionstest</h1>
+  <p class="hint">Klicke auf das Feld, sobald es grün wird. Zu früh geklickt zählt als Fehlversuch.</p>
+
+  <button type="button" id="pad" class="pad waiting">Klicken zum Start</button>
+
+  <div class="results" id="results" aria-live="polite">
+    <div class="result-row">
+      <span>Letzte Zeit</span>
+      <strong id="lastTime">–</strong>
+    </div>
+    <div class="result-row best">
+      <span>Bestzeit</span>
+      <strong id="bestTime">–</strong>
+    </div>
+    <div class="result-row">
+      <span>Durchschnitt<br><span class="note" id="attemptCount">0 Versuche</span></span>
+      <strong id="avgTime">–</strong>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
