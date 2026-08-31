@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IBAN-Prüfer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>IBAN-Prüfer</h1>
+  <p class="hint">Gib eine IBAN ein — die Prüfziffer wird live per Mod-97-Verfahren (ISO 7064) berechnet, komplett clientseitig, ohne Bankdaten irgendwohin zu senden.</p>
+
+  <label for="ibanInput">IBAN</label>
+  <input type="text" id="ibanInput" placeholder="z. B. DE89 3704 0044 0532 0130 00" autocomplete="off" spellcheck="false">
+
+  <div class="result" id="result" aria-live="polite">
+    <div class="result-row">
+      <span>Status</span>
+      <strong id="statusText">–</strong>
+    </div>
+    <div class="result-row">
+      <span>Land</span>
+      <strong id="countryText">–</strong>
+    </div>
+    <div class="result-row">
+      <span>Formatiert</span>
+      <strong id="formattedText">–</strong>
+    </div>
+  </div>
+
+  <p class="note">Prüft nur die Mod-97-Prüfziffer und die erwartete Länge pro Land — bestätigt nicht, dass das Konto real existiert.</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
