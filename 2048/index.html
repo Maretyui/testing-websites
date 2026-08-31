@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2048</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <div class="top-row">
+    <h1>2048</h1>
+    <div class="score-box">
+      <span>Punkte</span>
+      <strong id="score">0</strong>
+    </div>
+  </div>
+  <p class="hint">Pfeiltasten oder WASD zum Schieben. Gleiche Zahlen verschmelzen beim Aufeinandertreffen zur doppelten Zahl. Ziel: die 2048-Kachel.</p>
+
+  <div class="board-wrap">
+    <div class="grid" id="grid"></div>
+    <div class="overlay hidden" id="overlay">
+      <strong id="overlayText">Geschafft!</strong>
+      <button type="button" id="restartBtn">Neu starten</button>
+    </div>
+  </div>
+
+  <button type="button" id="newGameBtn" class="new-game-btn">Neues Spiel</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
