@@ -171,3 +171,6 @@ On here, you can find testing websites. I test different things over time, and u
 * IBAN-Prüfer (IBAN Validator) <br>
   ---> Live Mod-97-Prüfziffernberechnung (ISO 7064) nach Ländercode und erwarteter Länge, komplett clientseitig
   $${\color{lightgreen}Successful}$$
+* 2048 <br>
+  ---> Klassisches Kachel-Merge-Spiel auf einem 4x4-Grid, Pfeiltasten/WASD/Swipe, Punktestand und Sieg-/Game-Over-Erkennung
+  $${\color{lightgreen}Successful}$$
