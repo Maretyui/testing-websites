@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wort-Häufigkeits-Zähler</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Wort-Häufigkeits-Zähler</h1>
+  <p class="hint">Text einfügen, Häufigkeit jedes Worts wird live als sortierte Balkenliste angezeigt.</p>
+
+  <textarea id="inputText" rows="8" placeholder="Text hier einfügen oder tippen …"></textarea>
+
+  <div class="stats" id="stats"></div>
+
+  <div class="table-wrap">
+    <table id="freqTable">
+      <thead>
+        <tr>
+          <th>Wort</th>
+          <th>Anzahl</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="freqBody"></tbody>
+    </table>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
