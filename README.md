@@ -174,3 +174,6 @@ On here, you can find testing websites. I test different things over time, and u
 * 2048 <br>
   ---> Klassisches Kachel-Merge-Spiel auf einem 4x4-Grid, Pfeiltasten/WASD/Swipe, Punktestand und Sieg-/Game-Over-Erkennung
   $${\color{lightgreen}Successful}$$
+* Quadratische-Gleichungen-Löser <br>
+  ---> a, b, c eingeben, Lösung live über die Mitternachtsformel inkl. Diskriminante, deckt doppelte und komplexe Lösungen mit ab
+  $${\color{lightgreen}Successful}$$
