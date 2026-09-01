@@ -177,3 +177,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Quadratische-Gleichungen-Löser <br>
   ---> a, b, c eingeben, Lösung live über die Mitternachtsformel inkl. Diskriminante, deckt doppelte und komplexe Lösungen mit ab
   $${\color{lightgreen}Successful}$$
+* Wort-Häufigkeits-Zähler (Word Frequency Counter) <br>
+  ---> Text einfügen, jedes Wort live nach Häufigkeit sortiert mit Balkendiagramm, Unicode-fähig via \p{L}-Regex
+  $${\color{lightgreen}Successful}$$
