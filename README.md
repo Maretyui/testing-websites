@@ -183,3 +183,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Elementarer Zellularautomat <br>
   ---> Wolframs 1D-Zellularautomaten (Regel 0–255), Startzeile einzeln oder zufällig, Presets für Regel 30/90/110/184, live auf Canvas gezeichnet
   $${\color{lightgreen}Successful}$$
+* Sortier-Visualisierer <br>
+  ---> Bubble/Selection/Insertion/Quick Sort Schritt für Schritt als animiertes Balkendiagramm, mit Vergleichs- und Vertauschungszähler
+  $${\color{lightgreen}Successful}$$
