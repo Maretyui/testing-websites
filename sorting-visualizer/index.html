@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sortier-Visualisierer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Sortier-Visualisierer</h1>
+  <p class="hint">Bubble/Selection/Insertion/Quick Sort Schritt für Schritt als Balkendiagramm, rein clientseitig.</p>
+
+  <div class="controls">
+    <div class="field">
+      <label for="algoSelect">Algorithmus</label>
+      <select id="algoSelect">
+        <option value="bubble">Bubble Sort</option>
+        <option value="selection">Selection Sort</option>
+        <option value="insertion">Insertion Sort</option>
+        <option value="quick">Quick Sort</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="sizeInput">Anzahl Balken: <span id="sizeValue">40</span></label>
+      <input type="range" id="sizeInput" min="10" max="100" value="40">
+    </div>
+    <div class="field">
+      <label for="speedInput">Geschwindigkeit</label>
+      <input type="range" id="speedInput" min="1" max="100" value="60">
+    </div>
+  </div>
+
+  <div class="actions">
+    <button id="shuffleBtn" type="button">Neu mischen</button>
+    <button id="startBtn" type="button" class="primary">Start</button>
+  </div>
+
+  <canvas id="bars" width="640" height="320" aria-label="Balkendiagramm der zu sortierenden Werte"></canvas>
+
+  <div class="stats">
+    <span><strong id="comparisons">0</strong> Vergleiche</span>
+    <span><strong id="swaps">0</strong> Vertauschungen</span>
+    <span id="status">Bereit</span>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
