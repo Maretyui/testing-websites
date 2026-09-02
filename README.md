@@ -180,3 +180,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Wort-Häufigkeits-Zähler (Word Frequency Counter) <br>
   ---> Text einfügen, jedes Wort live nach Häufigkeit sortiert mit Balkendiagramm, Unicode-fähig via \p{L}-Regex
   $${\color{lightgreen}Successful}$$
+* Elementarer Zellularautomat <br>
+  ---> Wolframs 1D-Zellularautomaten (Regel 0–255), Startzeile einzeln oder zufällig, Presets für Regel 30/90/110/184, live auf Canvas gezeichnet
+  $${\color{lightgreen}Successful}$$
