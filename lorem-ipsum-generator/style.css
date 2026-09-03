@@ -1,0 +1,136 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: #e9eaee;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  padding: 2rem 1rem;
+}
+
+.container {
+  width: min(92vw, 560px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  font-size: 1.3rem;
+  margin: 0 0 0.4rem;
+  text-align: center;
+}
+
+.hint {
+  color: #6b7280;
+  font-size: 0.85rem;
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+
+.settings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 1.25rem;
+}
+
+.settings label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.settings label.checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.settings input,
+.settings select {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 0.5rem 0.6rem;
+  font: inherit;
+  font-size: 0.9rem;
+  color: #111827;
+}
+
+.settings input:focus,
+.settings select:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+.settings input[type="number"] {
+  width: 5rem;
+}
+
+.settings input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.1rem;
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  transition: background 0.15s ease;
+}
+
+#generateBtn {
+  background: #6366f1;
+  margin-right: 0.5rem;
+}
+
+#generateBtn:hover {
+  background: #4f46e5;
+}
+
+#copyBtn {
+  background: #6b7280;
+}
+
+#copyBtn:hover {
+  background: #4b5563;
+}
+
+.status {
+  display: inline-block;
+  margin: 0.6rem 0 0;
+  font-size: 0.8rem;
+  color: #16a34a;
+}
+
+.output {
+  margin-top: 1.5rem;
+  max-height: 20rem;
+  overflow-y: auto;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 1rem;
+}
+
+.output p {
+  margin: 0 0 1rem;
+  line-height: 1.6;
+  color: #374151;
+  font-size: 0.9rem;
+}
+
+.output p:last-child {
+  margin-bottom: 0;
+}

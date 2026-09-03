@@ -186,3 +186,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Sortier-Visualisierer <br>
   ---> Bubble/Selection/Insertion/Quick Sort Schritt für Schritt als animiertes Balkendiagramm, mit Vergleichs- und Vertauschungszähler
   $${\color{lightgreen}Successful}$$
+* Lorem-Ipsum-Generator <br>
+  ---> Platzhaltertext nach Absätzen, Sätzen oder Wörtern erzeugen, optional mit klassischem "Lorem ipsum..."-Start, Ein-Klick-Kopie in die Zwischenablage
+  $${\color{lightgreen}Successful}$$
