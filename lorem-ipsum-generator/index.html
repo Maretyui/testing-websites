@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lorem Ipsum Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Lorem Ipsum Generator</h1>
+  <p class="hint">Wähle Menge und Einheit, erzeuge Platzhaltertext, und kopiere ihn mit einem Klick.</p>
+
+  <div class="settings">
+    <label>
+      Anzahl
+      <input type="number" id="countInput" min="1" max="50" value="3">
+    </label>
+    <label>
+      Einheit
+      <select id="unitInput">
+        <option value="paragraphs" selected>Absätze</option>
+        <option value="sentences">Sätze</option>
+        <option value="words">Wörter</option>
+      </select>
+    </label>
+    <label class="checkbox">
+      <input type="checkbox" id="startInput" checked>
+      Mit "Lorem ipsum..." beginnen
+    </label>
+  </div>
+
+  <button id="generateBtn">Erzeugen</button>
+  <button id="copyBtn" type="button">Kopieren</button>
+  <p id="copyStatus" class="status" aria-live="polite"></p>
+
+  <div id="output" class="output"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
