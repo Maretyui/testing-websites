@@ -189,3 +189,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Lorem-Ipsum-Generator <br>
   ---> Platzhaltertext nach Absätzen, Sätzen oder Wörtern erzeugen, optional mit klassischem "Lorem ipsum..."-Start, Ein-Klick-Kopie in die Zwischenablage
   $${\color{lightgreen}Successful}$$
+* Whack-a-Mole <br>
+  ---> 3x3-Raster mit zufällig auftauchenden Maulwürfen, 30-Sekunden-Runde, Punktestand und in localStorage gespeicherter Bestwert
+  $${\color{lightgreen}Successful}$$
