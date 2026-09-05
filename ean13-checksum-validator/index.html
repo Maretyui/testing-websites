@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EAN-13-Prüfziffer-Rechner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>EAN-13-Prüfziffer-Rechner</h1>
+  <p class="hint">12 oder 13 Ziffern eingeben — die Prüfziffer wird live berechnet und ein vollständiger Barcode geprüft oder ergänzt.</p>
+
+  <input type="text" id="digitsInput" inputmode="numeric" maxlength="13" placeholder="z. B. 400638133393">
+
+  <div class="result" id="result"></div>
+  <p class="error" id="errorMsg" role="alert"></p>
+
+  <details>
+    <summary>Wie wird gerechnet?</summary>
+    <p>
+      Von rechts nach links (ohne Prüfziffer) werden die Ziffern
+      abwechselnd mit 1 und 3 gewichtet, beginnend mit 1 an der letzten
+      Stelle. Die Summe wird auf das nächste Vielfache von 10
+      aufgerundet — die Differenz ist die Prüfziffer.
+    </p>
+  </details>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
