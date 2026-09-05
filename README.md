@@ -192,3 +192,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Whack-a-Mole <br>
   ---> 3x3-Raster mit zufällig auftauchenden Maulwürfen, 30-Sekunden-Runde, Punktestand und in localStorage gespeicherter Bestwert
   $${\color{lightgreen}Successful}$$
+* Chmod-Rechner <br>
+  ---> Unix-Dateirechte per Checkbox setzen oder Oktalwert/Symbol-String eintippen, alles live synchron inkl. fertigem chmod-Befehl
+  $${\color{lightgreen}Successful}$$
