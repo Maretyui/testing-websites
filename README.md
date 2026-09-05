@@ -195,3 +195,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Chmod-Rechner <br>
   ---> Unix-Dateirechte per Checkbox setzen oder Oktalwert/Symbol-String eintippen, alles live synchron inkl. fertigem chmod-Befehl
   $${\color{lightgreen}Successful}$$
+* EAN-13-Prüfziffer-Rechner <br>
+  ---> 12 Ziffern eingeben und die Prüfziffer berechnen lassen, oder 13 Ziffern eingeben und den kompletten Barcode live validieren
+  $${\color{lightgreen}Successful}$$
