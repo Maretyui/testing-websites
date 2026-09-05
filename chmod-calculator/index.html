@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chmod-Rechner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Chmod-Rechner</h1>
+  <p class="hint">Rechte per Checkbox setzen oder Oktalwert/Symbol-String eintippen — alles bleibt live synchron.</p>
+
+  <table class="perm-table">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Lesen (r)</th>
+        <th>Schreiben (w)</th>
+        <th>Ausführen (x)</th>
+      </tr>
+    </thead>
+    <tbody id="permBody"></tbody>
+  </table>
+
+  <div class="outputs">
+    <label>
+      Oktal
+      <input type="text" id="octalInput" maxlength="4" inputmode="numeric">
+    </label>
+    <label>
+      Symbolisch
+      <input type="text" id="symbolicInput" maxlength="10">
+    </label>
+    <label>
+      Befehl
+      <input type="text" id="commandOutput" readonly>
+    </label>
+  </div>
+  <p class="error" id="errorMsg" role="alert"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

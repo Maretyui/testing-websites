@@ -1,0 +1,114 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: #e9eaee;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  padding: 2rem;
+}
+
+.container {
+  width: min(90vw, 560px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  font-size: 1.3rem;
+  margin: 0 0 0.4rem;
+  text-align: center;
+}
+
+.hint {
+  color: #6b7280;
+  font-size: 0.85rem;
+  margin: 0 0 1.25rem;
+  text-align: center;
+}
+
+.perm-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin-bottom: 1.25rem;
+}
+
+.perm-table th {
+  text-align: center;
+  color: #6b7280;
+  font-weight: 600;
+  padding: 0.4rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.perm-table th:first-child {
+  text-align: left;
+}
+
+.perm-table td {
+  text-align: center;
+  padding: 0.5rem 0.4rem;
+  border-bottom: 1px solid #f4f5f7;
+}
+
+.perm-table td:first-child {
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+}
+
+.perm-table input[type="checkbox"] {
+  width: 1.1rem;
+  height: 1.1rem;
+  accent-color: #4338ca;
+  cursor: pointer;
+}
+
+.outputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.outputs label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.outputs input {
+  font: inherit;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.95rem;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  color: #171a21;
+}
+
+.outputs input:focus {
+  outline: none;
+  border-color: #4338ca;
+}
+
+.outputs input[readonly] {
+  background: #f4f5f7;
+  color: #4b5563;
+}
+
+.error {
+  color: #b91c1c;
+  font-size: 0.8rem;
+  min-height: 1.1rem;
+  margin: 0.75rem 0 0;
+  text-align: center;
+}
