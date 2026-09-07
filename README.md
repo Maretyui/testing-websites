@@ -201,3 +201,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Levenshtein-Distanz-Visualisierer <br>
   ---> Zwei Wörter eingeben, dynamische-Programmierung-Matrix live berechnet inkl. hervorgehobenem günstigsten Bearbeitungspfad
   $${\color{lightgreen}Successful}$$
+* URL-Query-Parser <br>
+  ---> URL einfügen, jeder Query-Parameter einzeln als bearbeitbare Key/Value-Zeile, die URL wird live neu zusammengesetzt
+  $${\color{lightgreen}Successful}$$
