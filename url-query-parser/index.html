@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>URL-Query-Parser</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>URL-Query-Parser</h1>
+  <p class="hint">URL einfügen — jeder Query-Parameter wird einzeln aufgelistet und bearbeitbar, die URL wird live neu zusammengesetzt.</p>
+
+  <label class="url-label">
+    URL
+    <input type="text" id="urlInput" placeholder="https://example.com/pfad?a=1&b=hallo+welt">
+  </label>
+  <p class="error" id="errorMsg" role="alert"></p>
+
+  <table class="param-table" id="paramTable">
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Value</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="paramBody"></tbody>
+  </table>
+  <button id="addParamBtn" type="button">+ Parameter hinzufügen</button>
+
+  <label class="url-label output-label">
+    Ergebnis
+    <input type="text" id="urlOutput" readonly>
+  </label>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
