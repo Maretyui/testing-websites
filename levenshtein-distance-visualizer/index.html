@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Levenshtein-Distanz-Visualisierer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Levenshtein-Distanz-Visualisierer</h1>
+  <p class="hint">Zwei Wörter eingeben — die Bearbeitungsdistanz-Matrix und der günstigste Pfad (Einfügen/Löschen/Ersetzen) werden live berechnet.</p>
+
+  <div class="inputs">
+    <label>
+      Wort A
+      <input type="text" id="wordA" value="kitten" maxlength="20">
+    </label>
+    <label>
+      Wort B
+      <input type="text" id="wordB" value="sitting" maxlength="20">
+    </label>
+  </div>
+
+  <p class="result" id="result"></p>
+
+  <div class="table-wrap">
+    <table id="matrix"></table>
+  </div>
+
+  <p class="legend">
+    <span class="swatch path"></span> Pfad der optimalen Bearbeitungsfolge
+  </p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
