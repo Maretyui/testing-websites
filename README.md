@@ -198,3 +198,6 @@ On here, you can find testing websites. I test different things over time, and u
 * EAN-13-Prüfziffer-Rechner <br>
   ---> 12 Ziffern eingeben und die Prüfziffer berechnen lassen, oder 13 Ziffern eingeben und den kompletten Barcode live validieren
   $${\color{lightgreen}Successful}$$
+* Levenshtein-Distanz-Visualisierer <br>
+  ---> Zwei Wörter eingeben, dynamische-Programmierung-Matrix live berechnet inkl. hervorgehobenem günstigsten Bearbeitungspfad
+  $${\color{lightgreen}Successful}$$
