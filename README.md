@@ -207,3 +207,6 @@ On here, you can find testing websites. I test different things over time, and u
 * NATO-Buchstabiertafel-Übersetzer <br>
   ---> Text live in die internationale Buchstabiertafel (Alfa, Bravo, Charlie...) übersetzen, oder Buchstabierwörter zurück in Text
   $${\color{lightgreen}Successful}$$
+* Text-Case-Konverter <br>
+  ---> Text eintippen, sofort als camelCase/PascalCase/snake_case/kebab-case/CONSTANT_CASE/Title Case/Sentence case mit Ein-Klick-Kopie
+  $${\color{lightgreen}Successful}$$
