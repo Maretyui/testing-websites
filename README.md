@@ -204,3 +204,6 @@ On here, you can find testing websites. I test different things over time, and u
 * URL-Query-Parser <br>
   ---> URL einfügen, jeder Query-Parameter einzeln als bearbeitbare Key/Value-Zeile, die URL wird live neu zusammengesetzt
   $${\color{lightgreen}Successful}$$
+* NATO-Buchstabiertafel-Übersetzer <br>
+  ---> Text live in die internationale Buchstabiertafel (Alfa, Bravo, Charlie...) übersetzen, oder Buchstabierwörter zurück in Text
+  $${\color{lightgreen}Successful}$$
