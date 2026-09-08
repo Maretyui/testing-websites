@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NATO-Buchstabiertafel-Übersetzer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>NATO-Buchstabiertafel-Übersetzer</h1>
+  <p class="hint">Text in die internationale Buchstabiertafel übersetzen — oder Buchstabierwörter zurück in Text.</p>
+
+  <div class="tabs" role="tablist">
+    <button class="tab active" id="toNatoTab" role="tab" aria-selected="true" aria-controls="toNatoPanel" type="button">Text → NATO</button>
+    <button class="tab" id="toTextTab" role="tab" aria-selected="false" aria-controls="toTextPanel" type="button">NATO → Text</button>
+  </div>
+
+  <section id="toNatoPanel" role="tabpanel" aria-labelledby="toNatoTab">
+    <label class="field-label" for="textInput">Text</label>
+    <textarea id="textInput" rows="3" placeholder="z.B. Maretyui 42"></textarea>
+    <div class="output-box" id="natoOutput" aria-live="polite"></div>
+  </section>
+
+  <section id="toTextPanel" role="tabpanel" aria-labelledby="toTextTab" hidden>
+    <label class="field-label" for="natoInput">Buchstabierwörter (durch Leerzeichen getrennt)</label>
+    <textarea id="natoInput" rows="3" placeholder="z.B. Mike Alfa Romeo Echo Tango Yankee Uniform India"></textarea>
+    <div class="output-box" id="textOutput" aria-live="polite"></div>
+  </section>
+
+  <details class="reference">
+    <summary>Vollständige Tabelle anzeigen</summary>
+    <div class="table-grid" id="referenceGrid"></div>
+  </details>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
