@@ -213,3 +213,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Luhn-Prüfziffer-Rechner <br>
   ---> Kartennummer eingeben, Prüfziffer live nach dem Luhn-Algorithmus berechnen und gegen die eingegebene letzte Ziffer prüfen
   $${\color{lightgreen}Successful}$$
+* UUID-Generator <br>
+  ---> Erzeugt 1-50 zufällige UUIDs v4 per crypto.randomUUID() auf einmal, jede einzeln mit einem Klick kopierbar
+  $${\color{lightgreen}Successful}$$
