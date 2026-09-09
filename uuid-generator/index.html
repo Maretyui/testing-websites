@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UUID-Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>UUID-Generator</h1>
+  <p class="hint">Erzeugt zufällige UUIDs (Version 4) über die eingebaute crypto.randomUUID()-Funktion des Browsers.</p>
+
+  <div class="controls">
+    <label for="countInput">Anzahl</label>
+    <input type="number" id="countInput" min="1" max="50" value="1">
+    <button type="button" id="generateBtn">Neu generieren</button>
+  </div>
+
+  <ul class="uuid-list" id="uuidList"></ul>
+  <p class="copied-msg" id="copiedMsg" role="status" aria-live="polite"></p>
+
+  <details>
+    <summary>Was ist eine UUID v4?</summary>
+    <p>
+      Eine 128-Bit-Zufallszahl, dargestellt als 32 Hexadezimalziffern
+      in fünf Gruppen (8-4-4-4-12). Version und Variante sind an
+      festen Stellen codiert (die dritte Gruppe beginnt immer mit
+      <code>4</code>, die vierte mit <code>8</code>, <code>9</code>,
+      <code>a</code> oder <code>b</code>), der Rest ist echter
+      Zufall — die Kollisionswahrscheinlichkeit ist dadurch
+      praktisch vernachlässigbar.
+    </p>
+  </details>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
