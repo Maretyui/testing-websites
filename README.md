@@ -210,3 +210,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Text-Case-Konverter <br>
   ---> Text eintippen, sofort als camelCase/PascalCase/snake_case/kebab-case/CONSTANT_CASE/Title Case/Sentence case mit Ein-Klick-Kopie
   $${\color{lightgreen}Successful}$$
+* Luhn-Prüfziffer-Rechner <br>
+  ---> Kartennummer eingeben, Prüfziffer live nach dem Luhn-Algorithmus berechnen und gegen die eingegebene letzte Ziffer prüfen
+  $${\color{lightgreen}Successful}$$
