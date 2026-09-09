@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luhn-Prüfziffer-Rechner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Luhn-Prüfziffer-Rechner</h1>
+  <p class="hint">Kartennummer ohne oder mit Prüfziffer eingeben — sie wird live berechnet und geprüft (Luhn-Algorithmus, u. a. bei Kredit-/Debitkarten üblich).</p>
+
+  <input type="text" id="digitsInput" inputmode="numeric" placeholder="z. B. 79927398713">
+
+  <div class="result" id="result"></div>
+  <p class="error" id="errorMsg" role="alert"></p>
+
+  <details>
+    <summary>Wie wird gerechnet?</summary>
+    <p>
+      Von rechts nach links (ohne Prüfziffer) wird jede zweite Ziffer
+      verdoppelt; ergibt das Verdoppeln eine zweistellige Zahl, werden
+      deren Ziffern addiert (oder einfach 9 abgezogen). Alle Ziffern
+      werden summiert; die Prüfziffer ist die Differenz zur nächsten
+      vollen Zehnerstelle.
+    </p>
+  </details>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
