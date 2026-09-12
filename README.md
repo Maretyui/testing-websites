@@ -216,3 +216,6 @@ On here, you can find testing websites. I test different things over time, and u
 * UUID-Generator <br>
   ---> Erzeugt 1-50 zufällige UUIDs v4 per crypto.randomUUID() auf einmal, jede einzeln mit einem Klick kopierbar
   $${\color{lightgreen}Successful}$$
+* Hash-Generator <br>
+  ---> Text eintippen, SHA-1/256/384/512-Prüfsummen live über crypto.subtle.digest() berechnen, jede einzeln mit einem Klick kopierbar
+  $${\color{lightgreen}Successful}$$

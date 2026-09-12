@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hash-Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Hash-Generator</h1>
+  <p class="hint">Berechnet Prüfsummen für beliebigen Text live über die eingebaute crypto.subtle.digest()-Funktion des Browsers.</p>
+
+  <label for="textInput">Text</label>
+  <textarea id="textInput" rows="4" placeholder="Text hier eingeben..."></textarea>
+
+  <ul class="hash-list" id="hashList"></ul>
+  <p class="copied-msg" id="copiedMsg" role="status" aria-live="polite"></p>
+
+  <details>
+    <summary>Warum kein MD5?</summary>
+    <p>
+      Die Web-Crypto-API des Browsers unterstützt bewusst kein MD5 —
+      es gilt seit Langem als kryptografisch gebrochen. SHA-1 wird
+      hier nur zum Vergleich mit älteren Systemen angezeigt, gilt
+      aber ebenfalls als unsicher für alles Sicherheitsrelevante.
+      Für neue Anwendungen SHA-256 oder länger verwenden.
+    </p>
+  </details>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
