@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JWT-Decoder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>JWT-Decoder</h1>
+  <p class="hint">Zerlegt ein JSON Web Token in Header und Payload — rein clientseitig, keine Signaturprüfung, kein Netzwerkaufruf. Zum Nachsehen, nicht zur Vertrauensprüfung.</p>
+
+  <label for="jwtInput">Token</label>
+  <textarea id="jwtInput" rows="4" placeholder="eyJhbGciOi..."></textarea>
+  <p class="error-msg" id="errorMsg" role="alert"></p>
+
+  <div class="result" id="result" hidden>
+    <div class="block">
+      <h2>Header</h2>
+      <pre id="headerOut"></pre>
+    </div>
+    <div class="block">
+      <h2>Payload</h2>
+      <pre id="payloadOut"></pre>
+      <p class="exp-note" id="expNote"></p>
+    </div>
+    <div class="block">
+      <h2>Signatur</h2>
+      <p class="sig-hint">Nicht geprüft — Base64url-codiert, ohne den Signing Key nicht verifizierbar.</p>
+      <pre id="sigOut"></pre>
+    </div>
+  </div>
+
+  <details>
+    <summary>Warum keine Signaturprüfung?</summary>
+    <p>
+      Eine echte Prüfung bräuchte den geheimen oder öffentlichen
+      Schlüssel, mit dem das Token signiert wurde — den hat ein
+      reines Anzeige-Tool nie. Header und Payload sind bei einem JWT
+      ohnehin nur Base64url-codiert, nicht verschlüsselt, jeder kann
+      sie mitlesen; nur die Signatur beweist, dass niemand sie
+      unterwegs verändert hat.
+    </p>
+  </details>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
