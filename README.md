@@ -219,3 +219,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Hash-Generator <br>
   ---> Text eintippen, SHA-1/256/384/512-Prüfsummen live über crypto.subtle.digest() berechnen, jede einzeln mit einem Klick kopierbar
   $${\color{lightgreen}Successful}$$
+* JWT-Decoder <br>
+  ---> JSON Web Token einfügen, Header und Payload werden live decodiert und die exp-Ablaufzeit lesbar angezeigt, ohne Signaturprüfung
+  $${\color{lightgreen}Successful}$$
