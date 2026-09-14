@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unix-Timestamp-Konverter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Unix-Timestamp-Konverter</h1>
+  <p class="hint">Rechnet live zwischen Unix-Timestamp (Sekunden seit 1.1.1970 UTC) und lesbarem Datum um.</p>
+
+  <div class="now-row">
+    <span id="nowTimestamp" class="now-value"></span>
+    <button id="useNowBtn" type="button">Jetzt einsetzen</button>
+  </div>
+
+  <label for="timestampInput">Unix-Timestamp (Sekunden)</label>
+  <input type="text" id="timestampInput" inputmode="numeric" placeholder="z. B. 1758000000">
+  <p class="error-msg" id="tsError" role="alert"></p>
+
+  <div class="divider">↕</div>
+
+  <label for="dateInput">Datum &amp; Uhrzeit (lokal)</label>
+  <input type="datetime-local" id="dateInput" step="1">
+
+  <div class="result" id="result" hidden>
+    <p><strong>Lokal:</strong> <span id="localOut"></span></p>
+    <p><strong>UTC:</strong> <span id="utcOut"></span></p>
+    <p><strong>ISO 8601:</strong> <code id="isoOut"></code></p>
+    <p><strong>Relativ:</strong> <span id="relativeOut"></span></p>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
