@@ -222,3 +222,6 @@ On here, you can find testing websites. I test different things over time, and u
 * JWT-Decoder <br>
   ---> JSON Web Token einfügen, Header und Payload werden live decodiert und die exp-Ablaufzeit lesbar angezeigt, ohne Signaturprüfung
   $${\color{lightgreen}Successful}$$
+* Unix-Timestamp-Konverter <br>
+  ---> Live zweiseitige Umrechnung zwischen Unix-Timestamp und lesbarem Datum (lokal/UTC/ISO 8601), inkl. tickender "Jetzt"-Anzeige und relativer Zeitangabe
+  $${\color{lightgreen}Successful}$$
