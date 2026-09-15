@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Primfaktorzerlegung-Rechner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Primfaktorzerlegung-Rechner</h1>
+  <p class="hint">Zerlegt eine natürliche Zahl live in ihre Primfaktoren.</p>
+
+  <label for="numberInput">Zahl (2 – 1.000.000.000)</label>
+  <input type="text" id="numberInput" inputmode="numeric" placeholder="z. B. 360">
+  <p class="error-msg" id="numberError" role="alert"></p>
+
+  <div class="result" id="result" hidden>
+    <p class="prime-flag" id="primeFlag" hidden>Diese Zahl ist eine Primzahl.</p>
+    <p><strong>Faktoren:</strong> <span id="factorList"></span></p>
+    <p><strong>Potenzschreibweise:</strong> <span id="powerForm"></span></p>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

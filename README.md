@@ -228,3 +228,6 @@ On here, you can find testing websites. I test different things over time, and u
 * URL-Slug-Generator <br>
   ---> Titel live in einen URL-sicheren Slug umwandeln, inkl. korrekter deutscher Umlaut-Transliteration (ä→ae, ß→ss) statt bloßem Zeichen-Wegwerfen
   $${\color{lightgreen}Successful}$$
+* Primfaktorzerlegung-Rechner <br>
+  ---> Zahl eintippen, live per Trial Division in Primfaktoren zerlegt, inkl. Potenzschreibweise (z. B. 2³ × 3² × 5) und Primzahl-Erkennung
+  $${\color{lightgreen}Successful}$$
