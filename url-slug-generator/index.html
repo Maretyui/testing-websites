@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>URL-Slug-Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>URL-Slug-Generator</h1>
+  <p class="hint">Wandelt einen beliebigen Titel live in einen URL-sicheren Slug um, inklusive deutscher Umlaute.</p>
+
+  <label for="titleInput">Titel</label>
+  <input type="text" id="titleInput" placeholder="z. B. Grüße & Über uns – Seite 1">
+
+  <label for="separatorSelect">Trennzeichen</label>
+  <select id="separatorSelect">
+    <option value="-" selected>Bindestrich (-)</option>
+    <option value="_">Unterstrich (_)</option>
+  </select>
+
+  <label class="checkbox-row">
+    <input type="checkbox" id="lowercaseToggle" checked>
+    Kleinschreibung erzwingen
+  </label>
+
+  <div class="result" id="result" hidden>
+    <label for="slugOutput">Slug</label>
+    <div class="output-row">
+      <input type="text" id="slugOutput" readonly>
+      <button id="copyBtn" type="button">Kopieren</button>
+    </div>
+    <p class="copied-msg" id="copiedMsg" role="status" aria-live="polite" hidden>Kopiert!</p>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
