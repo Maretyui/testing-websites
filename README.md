@@ -225,3 +225,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Unix-Timestamp-Konverter <br>
   ---> Live zweiseitige Umrechnung zwischen Unix-Timestamp und lesbarem Datum (lokal/UTC/ISO 8601), inkl. tickender "Jetzt"-Anzeige und relativer Zeitangabe
   $${\color{lightgreen}Successful}$$
+* URL-Slug-Generator <br>
+  ---> Titel live in einen URL-sicheren Slug umwandeln, inkl. korrekter deutscher Umlaut-Transliteration (ä→ae, ß→ss) statt bloßem Zeichen-Wegwerfen
+  $${\color{lightgreen}Successful}$$
