@@ -231,3 +231,9 @@ On here, you can find testing websites. I test different things over time, and u
 * Primfaktorzerlegung-Rechner <br>
   ---> Zahl eintippen, live per Trial Division in Primfaktoren zerlegt, inkl. Potenzschreibweise (z. B. 2³ × 3² × 5) und Primzahl-Erkennung
   $${\color{lightgreen}Successful}$$
+* Glücksrad <br>
+  ---> Optionen zeilenweise eintragen, Canvas-Rad dreht sich per CSS-Transition und bleibt zufällig gewichtet auf einer Option stehen
+  $${\color{lightgreen}Successful}$$
+* Metronom <br>
+  ---> Web-Audio-Metronom mit Lookahead-Scheduler für drift-freies Timing, Tap-Tempo-Erkennung und visuellem Taktschlag inkl. Akzent auf Schlag 1
+  $${\color{lightgreen}Successful}$$
