@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metronom</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Metronom</h1>
+  <p class="hint">Web-Audio-Metronom mit Tap-Tempo, akzentuiert automatisch jeden 4. Schlag.</p>
+
+  <div class="beat-indicator" id="beatDot" aria-hidden="true"></div>
+
+  <div class="bpm-row">
+    <span class="bpm-value" id="bpmValue">120</span>
+    <span class="bpm-label">BPM</span>
+  </div>
+  <input type="range" id="bpmSlider" min="30" max="240" value="120" aria-label="Tempo in BPM">
+
+  <div class="buttons">
+    <button id="playBtn" type="button">Start</button>
+    <button id="tapBtn" type="button">Tap Tempo</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
