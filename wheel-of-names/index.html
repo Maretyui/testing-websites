@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glücksrad</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Glücksrad</h1>
+  <p class="hint">Eine Option pro Zeile eintragen, dann drehen lassen.</p>
+
+  <label for="optionsInput">Optionen</label>
+  <textarea id="optionsInput" rows="5" spellcheck="false">Pizza
+Sushi
+Burger
+Salat
+Pasta</textarea>
+
+  <div class="wheel-area">
+    <div class="pointer" aria-hidden="true"></div>
+    <canvas id="wheelCanvas"></canvas>
+  </div>
+
+  <button id="spinBtn" type="button">Drehen</button>
+  <p class="result" id="result" aria-live="polite"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
