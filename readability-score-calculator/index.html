@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Readability Score Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Readability Score Calculator</h1>
+  <p class="hint">Paste any text — a Flesch Reading Ease and Flesch-Kincaid Grade Level score update as you type.</p>
+
+  <textarea id="text" rows="10" placeholder="Paste or type text here..."></textarea>
+
+  <div class="scores">
+    <div class="score-card">
+      <span class="score-label">Flesch Reading Ease</span>
+      <span class="score-value" id="fleschScore">0.0</span>
+      <span class="score-tag" id="fleschTag">—</span>
+    </div>
+    <div class="score-card">
+      <span class="score-label">Grade Level</span>
+      <span class="score-value" id="gradeScore">0.0</span>
+      <span class="score-tag" id="gradeTag">—</span>
+    </div>
+  </div>
+
+  <div class="stats" id="stats" role="status" aria-live="polite">
+    0 words · 0 sentences · 0 syllables
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
