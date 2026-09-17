@@ -240,3 +240,6 @@ On here, you can find testing websites. I test different things over time, and u
 * GPA-Rechner <br>
   ---> Kurse mit Credits und Buchstabennote hinzufügen, gewichteter GPA (US 4.0-Skala) live über alle Zeilen berechnet
   $${\color{lightgreen}Successful}$$
+* Lesbarkeits-Score-Rechner <br>
+  ---> Text einfügen, Flesch Reading Ease und Flesch-Kincaid Grade Level live über eine Silbenzähl-Heuristik berechnet
+  $${\color{lightgreen}Successful}$$
