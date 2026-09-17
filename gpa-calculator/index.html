@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GPA Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>GPA Calculator</h1>
+  <p class="hint">Add each course's credits and letter grade — the weighted GPA updates live.</p>
+
+  <div class="rows" id="rows"></div>
+
+  <button type="button" id="addRow" class="secondary">+ Add course</button>
+
+  <div class="result">
+    <span class="result-label">GPA</span>
+    <span class="result-value" id="gpaValue">0.00</span>
+  </div>
+  <p class="sub-hint" id="creditTotal">0 total credits</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
