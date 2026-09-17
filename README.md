@@ -237,3 +237,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Metronom <br>
   ---> Web-Audio-Metronom mit Lookahead-Scheduler für drift-freies Timing, Tap-Tempo-Erkennung und visuellem Taktschlag inkl. Akzent auf Schlag 1
   $${\color{lightgreen}Successful}$$
+* GPA-Rechner <br>
+  ---> Kurse mit Credits und Buchstabennote hinzufügen, gewichteter GPA (US 4.0-Skala) live über alle Zeilen berechnet
+  $${\color{lightgreen}Successful}$$
