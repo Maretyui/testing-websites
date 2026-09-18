@@ -243,3 +243,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Lesbarkeits-Score-Rechner <br>
   ---> Text einfügen, Flesch Reading Ease und Flesch-Kincaid Grade Level live über eine Silbenzähl-Heuristik berechnet
   $${\color{lightgreen}Successful}$$
+* Dateigröße-Umrechner <br>
+  ---> Wert in einer Einheit eintragen (Bytes bis TB), alle anderen Einheiten werden live umgerechnet, wahlweise auf 1024er- oder 1000er-Basis
+  $${\color{lightgreen}Successful}$$
