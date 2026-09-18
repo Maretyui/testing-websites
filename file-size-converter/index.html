@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dateigröße umrechnen</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Dateigröße umrechnen</h1>
+  <p class="hint">Wert in eine Einheit eintragen, alle anderen Einheiten werden live berechnet.</p>
+
+  <div class="base-toggle" role="group" aria-label="Basis">
+    <button type="button" id="binaryBtn" class="unit-btn active">1024er-Basis (KiB, MiB, …)</button>
+    <button type="button" id="decimalBtn" class="unit-btn">1000er-Basis (KB, MB, …)</button>
+  </div>
+
+  <div class="fields" id="fields"></div>
+
+  <p class="note" id="note"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
