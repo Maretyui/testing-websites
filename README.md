@@ -246,3 +246,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Dateigröße-Umrechner <br>
   ---> Wert in einer Einheit eintragen (Bytes bis TB), alle anderen Einheiten werden live umgerechnet, wahlweise auf 1024er- oder 1000er-Basis
   $${\color{lightgreen}Successful}$$
+* Meme-Generator <br>
+  ---> Eigenes Bild hochladen, Ober- und Untertext im klassischen Impact-Stil per Canvas einblenden lassen, fertiges Meme als PNG herunterladen
+  $${\color{lightgreen}Successful}$$
