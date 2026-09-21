@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cron-Ausdruck erklären</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Cron-Ausdruck erklären</h1>
+  <p class="hint">5-Feld-Cron-Ausdruck eintragen (<code>Minute Stunde Tag Monat Wochentag</code>), Bedeutung und die nächsten Ausführungen werden live berechnet.</p>
+
+  <div class="field">
+    <label for="cronInput">Cron-Ausdruck</label>
+    <input type="text" id="cronInput" value="*/15 9-17 * * 1-5" autocomplete="off" spellcheck="false">
+  </div>
+
+  <p class="error" id="error" hidden></p>
+
+  <div class="output" id="output">
+    <p class="description" id="description"></p>
+
+    <h2>Nächste 5 Ausführungen</h2>
+    <ul class="runs" id="runs"></ul>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
