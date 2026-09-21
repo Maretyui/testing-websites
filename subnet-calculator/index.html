@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subnetz-Rechner (CIDR)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Subnetz-Rechner (CIDR)</h1>
+  <p class="hint">IPv4-Adresse mit Präfix eintragen (z. B. <code>192.168.1.10/24</code>), alles andere wird live berechnet.</p>
+
+  <div class="field">
+    <label for="cidrInput">IP-Adresse / Präfix</label>
+    <input type="text" id="cidrInput" value="192.168.1.10/24" autocomplete="off" spellcheck="false">
+  </div>
+
+  <p class="error" id="error" hidden></p>
+
+  <div class="results" id="results">
+    <div class="row"><span>Netzwerkadresse</span><strong id="network"></strong></div>
+    <div class="row"><span>Broadcast-Adresse</span><strong id="broadcast"></strong></div>
+    <div class="row"><span>Subnetzmaske</span><strong id="mask"></strong></div>
+    <div class="row"><span>Wildcard-Maske</span><strong id="wildcard"></strong></div>
+    <div class="row"><span>Erster nutzbarer Host</span><strong id="firstHost"></strong></div>
+    <div class="row"><span>Letzter nutzbarer Host</span><strong id="lastHost"></strong></div>
+    <div class="row"><span>Nutzbare Hosts</span><strong id="usable"></strong></div>
+    <div class="row"><span>Adressen gesamt</span><strong id="total"></strong></div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

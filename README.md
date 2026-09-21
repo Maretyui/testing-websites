@@ -249,3 +249,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Meme-Generator <br>
   ---> Eigenes Bild hochladen, Ober- und Untertext im klassischen Impact-Stil per Canvas einblenden lassen, fertiges Meme als PNG herunterladen
   $${\color{lightgreen}Successful}$$
+* Subnetz-Rechner (CIDR) <br>
+  ---> IPv4-Adresse mit Präfix eintragen, Netzwerk-/Broadcast-Adresse, Subnetzmaske und nutzbare Host-Range live berechnet
+  $${\color{lightgreen}Successful}$$
