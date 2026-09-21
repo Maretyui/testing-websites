@@ -252,3 +252,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Subnetz-Rechner (CIDR) <br>
   ---> IPv4-Adresse mit Präfix eintragen, Netzwerk-/Broadcast-Adresse, Subnetzmaske und nutzbare Host-Range live berechnet
   $${\color{lightgreen}Successful}$$
+* Cron-Ausdruck-Erklärer <br>
+  ---> 5-Feld-Cron-Ausdruck eintragen, live in eine deutsche Klartext-Beschreibung übersetzt und die nächsten 5 Ausführungszeitpunkte berechnet
+  $${\color{lightgreen}Successful}$$
