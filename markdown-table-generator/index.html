@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Markdown-Tabellen-Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Markdown-Tabellen-Generator</h1>
+  <p class="hint">Daten einfügen (aus Excel/Sheets kopiert oder mit Kommas getrennt) — live als Markdown-Tabelle formatiert.</p>
+
+  <div class="field">
+    <label for="rawInput">Rohdaten</label>
+    <textarea id="rawInput" spellcheck="false" placeholder="Name, Alter, Stadt&#10;Anna, 29, Hamburg&#10;Ben, 34, Berlin"></textarea>
+  </div>
+
+  <div class="options">
+    <label class="radio">
+      <input type="radio" name="delim" value="auto" checked>
+      Automatisch erkennen
+    </label>
+    <label class="radio">
+      <input type="radio" name="delim" value=",">
+      Komma
+    </label>
+    <label class="radio">
+      <input type="radio" name="delim" value="\t">
+      Tab
+    </label>
+    <label class="radio">
+      <input type="radio" name="delim" value=";">
+      Semikolon
+    </label>
+    <label class="checkbox">
+      <input type="checkbox" id="firstRowHeader" checked>
+      Erste Zeile ist Kopfzeile
+    </label>
+  </div>
+
+  <div class="field">
+    <div class="output-head">
+      <label for="output">Markdown-Ausgabe</label>
+      <button type="button" id="copyBtn">Kopieren</button>
+    </div>
+    <textarea id="output" spellcheck="false" readonly></textarea>
+  </div>
+
+  <div class="field">
+    <label>Vorschau</label>
+    <div id="preview" class="preview"></div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
