@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Braille-Übersetzer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Braille-Übersetzer</h1>
+  <p class="hint">Text live in Braille-Zeichen (Unicode-Blindenschrift) übersetzen — oder umgekehrt, Braille zurück in Text.</p>
+
+  <div class="tabs" role="tablist">
+    <button type="button" class="tab active" id="tabToBraille" role="tab" aria-selected="true">Text → Braille</button>
+    <button type="button" class="tab" id="tabToText" role="tab" aria-selected="false">Braille → Text</button>
+  </div>
+
+  <div class="field">
+    <label for="input" id="inputLabel">Text</label>
+    <textarea id="input" spellcheck="false" placeholder="Hallo Welt"></textarea>
+  </div>
+
+  <div class="field">
+    <div class="output-head">
+      <label for="output" id="outputLabel">Braille</label>
+      <button type="button" id="copyBtn">Kopieren</button>
+    </div>
+    <textarea id="output" spellcheck="false" readonly></textarea>
+  </div>
+
+  <p class="note" id="unsupportedNote" hidden>
+    Einzelne Zeichen haben keine Braille-Entsprechung in dieser Tabelle und wurden unverändert übernommen.
+  </p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

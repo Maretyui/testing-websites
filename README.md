@@ -258,3 +258,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Markdown-Tabellen-Generator <br>
   ---> Aus Excel/Sheets kopierte oder mit Komma/Semikolon/Tab getrennte Daten einfügen, live als Markdown-Tabelle formatiert inkl. Live-Vorschau und Ein-Klick-Kopie
   $${\color{lightgreen}Successful}$$
+* Braille-Übersetzer <br>
+  ---> Text live in Unicode-Blindenschrift übersetzen oder umgekehrt, inkl. Großschreibungs- und Zahlenzeichen nach Grad-1-Braille-Regeln
+  $${\color{lightgreen}Successful}$$
