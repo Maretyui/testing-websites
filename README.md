@@ -255,3 +255,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Cron-Ausdruck-Erklärer <br>
   ---> 5-Feld-Cron-Ausdruck eintragen, live in eine deutsche Klartext-Beschreibung übersetzt und die nächsten 5 Ausführungszeitpunkte berechnet
   $${\color{lightgreen}Successful}$$
+* Markdown-Tabellen-Generator <br>
+  ---> Aus Excel/Sheets kopierte oder mit Komma/Semikolon/Tab getrennte Daten einfügen, live als Markdown-Tabelle formatiert inkl. Live-Vorschau und Ein-Klick-Kopie
+  $${\color{lightgreen}Successful}$$
