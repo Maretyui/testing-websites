@@ -264,3 +264,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Zufallszahlen-Generator <br>
   ---> Min/Max und Anzahl eintragen, echte Zufallszahlen per crypto.getRandomValues() erzeugen, wahlweise ohne Duplikate, jede Zahl einzeln mit einem Klick kopierbar
   $${\color{lightgreen}Successful}$$
+* Hitzeindex-Rechner <br>
+  ---> Lufttemperatur und Luftfeuchtigkeit eintragen, gefühlte Temperatur live nach der NWS-Rothfusz-Formel berechnet, inkl. Gefahrenstufe
+  $${\color{lightgreen}Successful}$$
