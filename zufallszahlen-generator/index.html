@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zufallszahlen-Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Zufallszahlen-Generator</h1>
+  <p class="hint">Min/Max und Anzahl eintragen, echte Zufallszahlen per <code>crypto.getRandomValues()</code> erzeugen.</p>
+
+  <div class="row">
+    <div class="field">
+      <label for="minInput">Minimum</label>
+      <input type="number" id="minInput" value="1">
+    </div>
+    <div class="field">
+      <label for="maxInput">Maximum</label>
+      <input type="number" id="maxInput" value="100">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="field">
+      <label for="countInput">Anzahl</label>
+      <input type="number" id="countInput" value="5" min="1" max="100">
+    </div>
+    <div class="field checkbox-field">
+      <label for="uniqueInput">
+        <input type="checkbox" id="uniqueInput">
+        Keine Duplikate
+      </label>
+    </div>
+  </div>
+
+  <p class="error" id="error" hidden></p>
+
+  <button id="generateBtn" type="button">Zahlen generieren</button>
+
+  <ul class="results" id="results" hidden></ul>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
