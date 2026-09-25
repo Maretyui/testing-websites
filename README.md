@@ -261,3 +261,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Braille-Übersetzer <br>
   ---> Text live in Unicode-Blindenschrift übersetzen oder umgekehrt, inkl. Großschreibungs- und Zahlenzeichen nach Grad-1-Braille-Regeln
   $${\color{lightgreen}Successful}$$
+* Zufallszahlen-Generator <br>
+  ---> Min/Max und Anzahl eintragen, echte Zufallszahlen per crypto.getRandomValues() erzeugen, wahlweise ohne Duplikate, jede Zahl einzeln mit einem Klick kopierbar
+  $${\color{lightgreen}Successful}$$
