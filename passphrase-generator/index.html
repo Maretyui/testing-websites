@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Passphrase Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Passphrase Generator</h1>
+  <p class="hint">Diceware-artige Passphrase aus zufällig gewählten Wörtern, erzeugt per crypto.getRandomValues().</p>
+
+  <div class="output-row">
+    <output id="output" for="wordCount separator"></output>
+  </div>
+
+  <div class="controls">
+    <label class="control">
+      Anzahl Wörter: <span id="wordCountValue">5</span>
+      <input type="range" id="wordCount" min="3" max="10" value="5">
+    </label>
+
+    <label class="control">
+      Trennzeichen
+      <select id="separator">
+        <option value="-">Bindestrich (-)</option>
+        <option value=" ">Leerzeichen</option>
+        <option value=".">Punkt (.)</option>
+        <option value="">Keins</option>
+      </select>
+    </label>
+
+    <label class="checkbox-row">
+      <input type="checkbox" id="capitalize">
+      Jedes Wort großschreiben
+    </label>
+
+    <label class="checkbox-row">
+      <input type="checkbox" id="addNumber">
+      Zufallszahl anhängen
+    </label>
+  </div>
+
+  <button type="button" id="generateBtn" class="generate-btn">Neu erzeugen</button>
+  <button type="button" id="copyBtn" class="copy-btn">Kopieren</button>
+
+  <p class="entropy" id="entropy"></p>
+</div>
+<script src="wordlist.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

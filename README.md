@@ -270,3 +270,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Number to Words Converter <br>
   ---> Ganzzahl eingeben, live als englischer Text ausgeschrieben (bis 999.999.999.999), inkl. Kopieren-Button
   $${\color{lightgreen}Successful}$$
+* Passphrase Generator <br>
+  ---> Diceware-artige Passphrase aus einer 255-Wörter-Liste per crypto.getRandomValues(), mit Trennzeichen-, Großschreibungs- und Entropie-Anzeige
+  $${\color{lightgreen}Successful}$$
