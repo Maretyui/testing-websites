@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Number to Words Converter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Number to Words Converter</h1>
+  <p class="hint">Wandelt eine Ganzzahl (bis 999.999.999.999) live in englische Wörter um.</p>
+
+  <label class="field">
+    Zahl
+    <input type="number" id="numberInput" placeholder="z. B. 1994" step="1">
+  </label>
+
+  <div class="output" id="output" aria-live="polite">Gib eine Zahl ein.</div>
+
+  <button type="button" id="copyBtn" class="copy-btn">In Zwischenablage kopieren</button>
+
+  <div id="errorMsg" class="error hidden" role="alert"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
