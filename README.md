@@ -267,3 +267,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Hitzeindex-Rechner <br>
   ---> Lufttemperatur und Luftfeuchtigkeit eintragen, gefühlte Temperatur live nach der NWS-Rothfusz-Formel berechnet, inkl. Gefahrenstufe
   $${\color{lightgreen}Successful}$$
+* Number to Words Converter <br>
+  ---> Ganzzahl eingeben, live als englischer Text ausgeschrieben (bis 999.999.999.999), inkl. Kopieren-Button
+  $${\color{lightgreen}Successful}$$
