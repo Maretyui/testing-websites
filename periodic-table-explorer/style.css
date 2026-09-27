@@ -1,0 +1,133 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #e9eaee;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  width: 100%;
+  max-width: 900px;
+  padding: 2rem 1rem 3rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+}
+
+h1 {
+  font-size: 1.3rem;
+  margin: 0;
+  text-align: center;
+}
+
+.hint {
+  color: #6b7280;
+  font-size: 0.85rem;
+  margin: 0;
+  text-align: center;
+}
+
+.table-scroll {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  padding: 0.75rem;
+}
+
+.ptable {
+  display: grid;
+  grid-template-columns: repeat(18, 2.4rem);
+  grid-auto-rows: 2.4rem;
+  gap: 2px;
+  width: max-content;
+}
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  color: #111827;
+  padding: 0;
+  touch-action: manipulation;
+}
+
+.cell .num {
+  font-size: 0.5rem;
+  align-self: flex-start;
+  margin: 0.1rem 0 0 0.15rem;
+  opacity: 0.65;
+}
+
+.cell .sym {
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: -0.35rem;
+}
+
+.cell.selected {
+  outline: 2px solid #111827;
+  outline-offset: -2px;
+}
+
+.cell.alkali-metal { background: #fecaca; }
+.cell.alkaline-earth { background: #fed7aa; }
+.cell.transition-metal { background: #fde68a; }
+.cell.post-transition-metal { background: #d9f99d; }
+.cell.metalloid { background: #a7f3d0; }
+.cell.nonmetal { background: #a5f3fc; }
+.cell.halogen { background: #bae6fd; }
+.cell.noble-gas { background: #c7d2fe; }
+.cell.lanthanide { background: #f5d0fe; }
+.cell.actinide { background: #fbcfe8; }
+
+.detail {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  padding: 1.25rem;
+  min-height: 4rem;
+}
+
+.detail .empty {
+  color: #9ca3af;
+  font-style: italic;
+  margin: 0;
+  text-align: center;
+}
+
+.detail .name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem;
+}
+
+.detail dl {
+  display: grid;
+  grid-template-columns: minmax(0, auto) minmax(0, 1fr);
+  gap: 0.25rem 0.75rem;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.detail dt {
+  color: #6b7280;
+}
+
+.detail dd {
+  margin: 0;
+}
