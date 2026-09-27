@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Markov-Satzgenerator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Markov-Satzgenerator</h1>
+  <p class="hint">
+    Baut aus dem Text unten eine Markov-Kette (welches Wort folgt wie oft auf
+    welches) und erzeugt daraus neue, grammatikalisch ähnlich klingende Sätze
+    — kein Zufallswort-Mix wie ein klassischer Lorem-Ipsum-Generator, sondern
+    gewichtete Übergänge aus dem Quelltext selbst.
+  </p>
+
+  <label class="control" for="sourceText">Quelltext (mind. ein paar Sätze)</label>
+  <textarea id="sourceText" rows="6"></textarea>
+
+  <div class="row">
+    <label class="control" for="sentenceCount">
+      Sätze: <span id="sentenceCountValue">3</span>
+    </label>
+    <input type="range" id="sentenceCount" min="1" max="10" value="3">
+  </div>
+
+  <button type="button" id="generateBtn" class="generate-btn">Sätze erzeugen</button>
+
+  <div class="output" id="output" aria-live="polite"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
