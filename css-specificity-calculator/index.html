@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS-Spezifitätsrechner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>CSS-Spezifitätsrechner</h1>
+  <p class="hint">Eine Selektor-Zeile pro Zeile, keine Daten verlassen den Browser.</p>
+
+  <textarea id="input" rows="5" placeholder="#nav a.active&#10;.card > p:first-child&#10;button[disabled]"></textarea>
+
+  <ul class="results" id="results"></ul>
+
+  <p class="empty" id="emptyMsg">Noch keine Selektoren eingegeben.</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
