@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fluid-Typography clamp()-Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Fluid-Typography clamp()-Generator</h1>
+  <p class="hint">Zwei Größen, zwei Viewport-Breiten &mdash; daraus wird eine <code>clamp()</code>-Formel.</p>
+
+  <div class="grid">
+    <div class="field">
+      <label for="minSize">Min. Schriftgröße (px)</label>
+      <input type="number" id="minSize" value="16" min="1" step="1">
+    </div>
+    <div class="field">
+      <label for="minWidth">bei Viewport (px)</label>
+      <input type="number" id="minWidth" value="360" min="1" step="1">
+    </div>
+    <div class="field">
+      <label for="maxSize">Max. Schriftgröße (px)</label>
+      <input type="number" id="maxSize" value="32" min="1" step="1">
+    </div>
+    <div class="field">
+      <label for="maxWidth">bei Viewport (px)</label>
+      <input type="number" id="maxWidth" value="1200" min="1" step="1">
+    </div>
+  </div>
+
+  <div class="row">
+    <label for="viewportSim">Viewport-Vorschau</label>
+    <input type="range" id="viewportSim" min="320" max="1600" value="768">
+    <span class="value" id="viewportSimValue">768px</span>
+  </div>
+
+  <div class="preview-box">
+    <span id="previewText" class="preview-text">Aa Fluid Type</span>
+  </div>
+
+  <div class="output-row">
+    <textarea id="code" readonly rows="2"></textarea>
+    <button id="copyBtn" type="button">Kopieren</button>
+  </div>
+  <p class="copied" id="copiedMsg"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
