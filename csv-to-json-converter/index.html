@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSV to JSON Converter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>CSV to JSON Converter</h1>
+  <p class="hint">CSV einfügen (erste Zeile = Spaltennamen), live als JSON-Array formatiert.</p>
+
+  <div class="controls">
+    <label class="control">
+      Trennzeichen
+      <select id="delimiter">
+        <option value=",">Komma (,)</option>
+        <option value=";">Semikolon (;)</option>
+        <option value="\t">Tab</option>
+      </select>
+    </label>
+  </div>
+
+  <textarea id="csvInput" rows="6" placeholder="name,alter&#10;Anna,29&#10;Ben,34"></textarea>
+
+  <textarea id="jsonOutput" rows="10" readonly></textarea>
+
+  <p class="error" id="error"></p>
+
+  <div class="button-row">
+    <button class="copy-btn" id="copyBtn" type="button">JSON kopieren</button>
+    <button class="copy-btn" id="downloadBtn" type="button">Als Datei herunterladen</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

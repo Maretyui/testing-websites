@@ -276,3 +276,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Date Difference Calculator <br>
   ---> Zwei Daten eintragen, live Differenz in Jahren/Monaten/Tagen sowie Wochen und Werktagen berechnet, inkl. Behandlung vertauschter Daten
   $${\color{lightgreen}Successful}$$
+* CSV to JSON Converter <br>
+  ---> CSV mit wählbarem Trennzeichen einfügen (inkl. korrektem Parsing von in Anführungszeichen stehenden Feldern), live als formatiertes JSON-Array angezeigt, mit Kopier- und Download-Button
+  $${\color{lightgreen}Successful}$$
