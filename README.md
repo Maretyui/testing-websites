@@ -273,3 +273,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Passphrase Generator <br>
   ---> Diceware-artige Passphrase aus einer 255-Wörter-Liste per crypto.getRandomValues(), mit Trennzeichen-, Großschreibungs- und Entropie-Anzeige
   $${\color{lightgreen}Successful}$$
+* Date Difference Calculator <br>
+  ---> Zwei Daten eintragen, live Differenz in Jahren/Monaten/Tagen sowie Wochen und Werktagen berechnet, inkl. Behandlung vertauschter Daten
+  $${\color{lightgreen}Successful}$$
