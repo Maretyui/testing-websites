@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Date Difference Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Date Difference Calculator</h1>
+  <p class="hint">Zwei Daten eintragen, den Abstand dazwischen live berechnet bekommen.</p>
+
+  <div class="controls">
+    <label class="control">
+      Von
+      <input type="date" id="startDate">
+    </label>
+
+    <label class="control">
+      Bis
+      <input type="date" id="endDate">
+    </label>
+  </div>
+
+  <div class="output-row">
+    <output id="output" for="startDate endDate">Bitte beide Daten wählen.</output>
+  </div>
+
+  <div class="breakdown" id="breakdown"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
