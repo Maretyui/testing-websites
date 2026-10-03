@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Labyrinth-Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Labyrinth-Generator</h1>
+  <p class="hint">Erzeugt per rekursivem Backtracking ein neues Labyrinth. Tippen/klicken und ziehen, um vom grünen zum roten Feld zu laufen.</p>
+
+  <canvas id="maze" width="400" height="400" aria-label="Labyrinth-Raster, Start oben links grün, Ziel unten rechts rot"></canvas>
+
+  <p class="status" id="status" aria-live="polite">Labyrinth bereit.</p>
+
+  <div class="controls">
+    <button id="newMazeBtn" class="primary-btn" type="button">Neues Labyrinth</button>
+    <button id="solveBtn" class="secondary-btn" type="button">Lösung zeigen</button>
+    <button id="resetPathBtn" class="secondary-btn" type="button">Weg löschen</button>
+  </div>
+
+  <div class="row">
+    <label for="size">Größe</label>
+    <input type="range" id="size" min="6" max="30" value="14">
+    <span class="value" id="sizeValue">14</span>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

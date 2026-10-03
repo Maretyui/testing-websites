@@ -279,3 +279,6 @@ On here, you can find testing websites. I test different things over time, and u
 * CSV to JSON Converter <br>
   ---> CSV mit wählbarem Trennzeichen einfügen (inkl. korrektem Parsing von in Anführungszeichen stehenden Feldern), live als formatiertes JSON-Array angezeigt, mit Kopier- und Download-Button
   $${\color{lightgreen}Successful}$$
+* Labyrinth-Generator <br>
+  ---> Per rekursivem Backtracking erzeugtes Labyrinth auf Canvas, vom Start- zum Zielfeld durchlaufbar per Touch/Maus-Ziehen, plus BFS-Lösungsweg auf Knopfdruck
+  $${\color{lightgreen}Successful}$$
