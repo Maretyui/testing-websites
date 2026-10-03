@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wortsuchrätsel-Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Wortsuchrätsel-Generator</h1>
+  <p class="hint">Wörter sind horizontal, vertikal oder diagonal versteckt, auch rückwärts. Über die Buchstaben ziehen (oder wischen), um ein Wort zu markieren.</p>
+
+  <div class="grid" id="grid" role="group" aria-label="Buchstabenraster"></div>
+
+  <p class="status" id="status" aria-live="polite">0 von 0 Wörtern gefunden.</p>
+
+  <ul class="word-list" id="wordList"></ul>
+
+  <div class="controls">
+    <button id="newPuzzleBtn" class="primary-btn" type="button">Neues Rätsel</button>
+  </div>
+
+  <div class="custom-words">
+    <label for="customWords">Eigene Wörter (optional, mit Komma getrennt)</label>
+    <textarea id="customWords" rows="2" placeholder="z.B. KATZE, HUND, MAUS"></textarea>
+    <button id="useCustomBtn" class="secondary-btn" type="button">Mit diesen Wörtern erzeugen</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
