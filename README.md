@@ -282,3 +282,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Labyrinth-Generator <br>
   ---> Per rekursivem Backtracking erzeugtes Labyrinth auf Canvas, vom Start- zum Zielfeld durchlaufbar per Touch/Maus-Ziehen, plus BFS-Lösungsweg auf Knopfdruck
   $${\color{lightgreen}Successful}$$
+* Wortsuchrätsel-Generator <br>
+  ---> Wörter in 8 Richtungen (auch rückwärts) in ein Buchstabenraster platziert, per Touch/Maus-Ziehen markierbar, inkl. eigener Wortliste statt der Vorgabe
+  $${\color{lightgreen}Successful}$$
