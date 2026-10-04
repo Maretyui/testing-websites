@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farbnamen-Finder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Farbnamen-Finder</h1>
+  <p class="hint">Welche benannte CSS-Farbe kommt einem Hex-Wert am nächsten? Rein clientseitig, nichts wird irgendwohin gesendet.</p>
+
+  <div class="field">
+    <input type="color" id="pickedColor" value="#6366f1">
+    <input type="text" id="pickedColorHex" value="#6366f1" maxlength="7" spellcheck="false">
+  </div>
+
+  <div class="matches" id="matches"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
