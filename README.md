@@ -291,3 +291,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Windchill-Rechner <br>
   ---> Lufttemperatur und Windgeschwindigkeit eintragen, gefühlte Kälte live nach der NWS-Windchill-Formel berechnet, inkl. Erfrierungsrisiko-Einstufung
   $${\color{lightgreen}Successful}$$
+* Luftlinie-Entfernungsrechner <br>
+  ---> Zwei Koordinatenpaare eintragen, Luftlinie live per Haversine-Formel berechnet, inkl. Anfangspeilung in Grad und Kompassrichtung
+  $${\color{lightgreen}Successful}$$
