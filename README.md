@@ -288,3 +288,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Farbnamen-Finder <br>
   ---> Hex-Wert oder Color-Picker eingeben, live die 5 nächstgelegenen benannten CSS-Farben per RGB-Abstand berechnet und angezeigt
   $${\color{lightgreen}Successful}$$
+* Windchill-Rechner <br>
+  ---> Lufttemperatur und Windgeschwindigkeit eintragen, gefühlte Kälte live nach der NWS-Windchill-Formel berechnet, inkl. Erfrierungsrisiko-Einstufung
+  $${\color{lightgreen}Successful}$$
