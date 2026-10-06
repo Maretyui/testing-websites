@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lauftempo-Rechner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Lauftempo-Rechner</h1>
+  <p class="hint">Distanz und Zeit eintragen, Tempo und Geschwindigkeit werden live berechnet, dazu geschätzte Zielzeiten für andere Standarddistanzen.</p>
+
+  <div class="field">
+    <label for="distanceInput">Distanz (km)</label>
+    <input type="number" id="distanceInput" value="10" min="0.1" step="0.01">
+  </div>
+
+  <div class="field-row">
+    <div class="field">
+      <label for="hoursInput">Std.</label>
+      <input type="number" id="hoursInput" value="0" min="0" step="1">
+    </div>
+    <div class="field">
+      <label for="minutesInput">Min.</label>
+      <input type="number" id="minutesInput" value="50" min="0" max="59" step="1">
+    </div>
+    <div class="field">
+      <label for="secondsInput">Sek.</label>
+      <input type="number" id="secondsInput" value="0" min="0" max="59" step="1">
+    </div>
+  </div>
+
+  <p class="error" id="error" hidden></p>
+
+  <div class="output" id="output">
+    <div class="output-main">
+      <p class="result-label">Pace</p>
+      <p class="result-value" id="paceValue">–</p>
+    </div>
+    <p class="speed" id="speedValue"></p>
+  </div>
+
+  <div class="predictions" id="predictions" hidden>
+    <p class="predictions-label">Geschätzte Zielzeiten bei gleichem Tempo</p>
+    <ul id="predictionsList"></ul>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

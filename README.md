@@ -294,3 +294,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Luftlinie-Entfernungsrechner <br>
   ---> Zwei Koordinatenpaare eintragen, Luftlinie live per Haversine-Formel berechnet, inkl. Anfangspeilung in Grad und Kompassrichtung
   $${\color{lightgreen}Successful}$$
+* Lauftempo-Rechner <br>
+  ---> Distanz und Zeit eintragen, Pace und Geschwindigkeit live berechnet, plus geschätzte Zielzeiten für 5 km/10 km/Halbmarathon/Marathon nach Riegels Formel
+  $${\color{lightgreen}Successful}$$
