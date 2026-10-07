@@ -297,3 +297,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Lauftempo-Rechner <br>
   ---> Distanz und Zeit eintragen, Pace und Geschwindigkeit live berechnet, plus geschätzte Zielzeiten für 5 km/10 km/Halbmarathon/Marathon nach Riegels Formel
   $${\color{lightgreen}Successful}$$
+* Lights Out <br>
+  ---> Klassisches 5x5-Schalter-Rätsel: ein Feld anzutippen schaltet es und seine direkten Nachbarn um, Ziel ist alle Lichter auszuschalten, mit Zugzähler und gespeichertem Bestwert
+  $${\color{lightgreen}Successful}$$
