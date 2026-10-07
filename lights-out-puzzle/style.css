@@ -1,0 +1,118 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: #e9eaee;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  padding: 2rem 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  font-size: 1.3rem;
+  margin: 0 0 0.4rem;
+  text-align: center;
+}
+
+.hint {
+  color: #6b7280;
+  font-size: 0.85rem;
+  margin: 0 0 1.5rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.25rem;
+}
+
+.stats > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.stats .label {
+  font-size: 0.75rem;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.stats .value {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #111827;
+  font-variant-numeric: tabular-nums;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.cell {
+  aspect-ratio: 1;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 0;
+  cursor: pointer;
+  background: #1f2937;
+  box-shadow: inset 0 0 0 2px #111827;
+  transition: background 0.1s ease;
+}
+
+.cell.on {
+  background: #facc15;
+  box-shadow: inset 0 0 0 2px #ca8a04, 0 0 12px rgba(250, 204, 21, 0.7);
+}
+
+.cell:active {
+  transform: scale(0.96);
+}
+
+.status {
+  text-align: center;
+  font-weight: 600;
+  color: #15803d;
+  min-height: 1.2rem;
+  margin: 1rem 0 0;
+}
+
+button#newBtn {
+  display: block;
+  width: 100%;
+  margin-top: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.1rem;
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: #6366f1;
+  color: #fff;
+  transition: background 0.15s ease;
+}
+
+button#newBtn:hover {
+  background: #4f46e5;
+}
