@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text-Vorleser</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Text-Vorleser</h1>
+  <p class="hint">Text eingeben und per Web-Speech-API vorlesen lassen, mit Stimmen- und Tempo-Auswahl sowie Play/Pause/Stop.</p>
+
+  <label for="textInput">Text</label>
+  <textarea id="textInput" rows="6" placeholder="Text hier eingeben...">Dies ist ein Test des Text-Vorlesers direkt im Browser, ganz ohne Server.</textarea>
+
+  <div class="controls">
+    <label for="voiceSelect">Stimme</label>
+    <select id="voiceSelect"></select>
+
+    <label for="rateInput">Tempo: <span id="rateValue">1.0</span>x</label>
+    <input type="range" id="rateInput" min="0.5" max="2" step="0.1" value="1">
+  </div>
+
+  <div class="buttons">
+    <button type="button" id="playBtn">▶ Vorlesen</button>
+    <button type="button" id="pauseBtn" disabled>⏸ Pause</button>
+    <button type="button" id="stopBtn" disabled>⏹ Stop</button>
+  </div>
+
+  <p class="status" id="status" role="status" aria-live="polite"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
