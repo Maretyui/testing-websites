@@ -300,3 +300,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Lights Out <br>
   ---> Klassisches 5x5-Schalter-Rätsel: ein Feld anzutippen schaltet es und seine direkten Nachbarn um, Ziel ist alle Lichter auszuschalten, mit Zugzähler und gespeichertem Bestwert
   $${\color{lightgreen}Successful}$$
+* Text-Vorleser (Text-to-Speech Reader) <br>
+  ---> Beliebigen Text per Web-Speech-API vorlesen lassen, mit Stimmen- und Tempo-Auswahl sowie Play/Pause/Stop
+  $${\color{lightgreen}Successful}$$
