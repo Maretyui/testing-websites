@@ -1,0 +1,136 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: #e9eaee;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  padding: 2rem 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 520px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  font-size: 1.3rem;
+  margin: 0 0 0.4rem;
+  text-align: center;
+}
+
+.hint {
+  color: #6b7280;
+  font-size: 0.85rem;
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.tab {
+  flex: 1;
+  border: 1px solid #d1d5db;
+  background: #f4f5f7;
+  color: #374151;
+  border-radius: 8px;
+  padding: 0.55rem 0.4rem;
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.tab:hover {
+  background: #e5e7eb;
+}
+
+.tab.active {
+  background: #6366f1;
+  border-color: #6366f1;
+  color: #fff;
+}
+
+.tab:focus-visible {
+  outline: 2px solid #6366f1;
+  outline-offset: 2px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.field input,
+.field textarea,
+#output {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 0.6rem 0.75rem;
+  font: inherit;
+  font-size: 0.9rem;
+  color: #111827;
+  resize: vertical;
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+.result-label {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin: 0 0 0.3rem;
+}
+
+#output {
+  background: #f9fafb;
+  color: #111827;
+  margin-bottom: 1.25rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.grid .cell {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f5f7;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.note {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin: 0;
+  min-height: 1.2em;
+}
