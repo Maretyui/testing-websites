@@ -303,3 +303,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Text-Vorleser (Text-to-Speech Reader) <br>
   ---> Beliebigen Text per Web-Speech-API vorlesen lassen, mit Stimmen- und Tempo-Auswahl sowie Play/Pause/Stop
   $${\color{lightgreen}Successful}$$
+* Playfair-Chiffre <br>
+  ---> Schlüsselwort und Text eingeben, live über ein 5x5-Schlüsselquadrat buchstabenpaarweise ver- und entschlüsselt, inkl. sichtbarem Schlüsselquadrat
+  $${\color{lightgreen}Successful}$$
