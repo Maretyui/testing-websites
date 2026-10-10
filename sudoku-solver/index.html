@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sudoku Löser &amp; Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Sudoku</h1>
+  <p class="hint">Ein neues Rätsel generieren, selbst lösen oder per Backtracking-Algorithmus automatisch lösen lassen.</p>
+
+  <div class="toolbar">
+    <label class="field inline">
+      Schwierigkeit
+      <select id="difficulty">
+        <option value="46">Leicht</option>
+        <option value="36" selected>Mittel</option>
+        <option value="28">Schwer</option>
+      </select>
+    </label>
+    <button id="newGameBtn" type="button">Neues Rätsel</button>
+  </div>
+
+  <div class="board" id="board" role="grid" aria-label="Sudoku-Feld"></div>
+
+  <div class="numpad" id="numpad" role="group" aria-label="Zahlenauswahl"></div>
+
+  <div class="actions">
+    <button id="checkBtn" type="button">Prüfen</button>
+    <button id="solveBtn" type="button">Lösen</button>
+    <button id="eraseBtn" type="button">Löschen</button>
+  </div>
+
+  <p class="note" id="note" role="status"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

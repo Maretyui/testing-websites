@@ -306,3 +306,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Playfair-Chiffre <br>
   ---> Schlüsselwort und Text eingeben, live über ein 5x5-Schlüsselquadrat buchstabenpaarweise ver- und entschlüsselt, inkl. sichtbarem Schlüsselquadrat
   $${\color{lightgreen}Successful}$$
+* Sudoku Löser &amp; Generator <br>
+  ---> Neues Rätsel in drei Schwierigkeitsgraden per Backtracking generieren, per Zahlenfeld (touch-freundlich) selbst lösen, Eingaben gegen die Lösung prüfen oder automatisch lösen lassen
+  $${\color{lightgreen}Successful}$$
