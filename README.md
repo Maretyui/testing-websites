@@ -309,3 +309,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Sudoku Löser &amp; Generator <br>
   ---> Neues Rätsel in drei Schwierigkeitsgraden per Backtracking generieren, per Zahlenfeld (touch-freundlich) selbst lösen, Eingaben gegen die Lösung prüfen oder automatisch lösen lassen
   $${\color{lightgreen}Successful}$$
+* Sieb des Eratosthenes <br>
+  ---> Obergrenze eintragen, per Einzelschritt oder automatisch durchlaufend alle Vielfachen jeder Primzahl live im Zahlenraster durchstreichen, bis nur die Primzahlen übrig bleiben
+  $${\color{lightgreen}Successful}$$
