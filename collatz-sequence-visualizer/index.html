@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collatz-Folge-Visualisierer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Collatz-Folge-Visualisierer</h1>
+  <p class="hint">Startzahl eingeben — gerade Zahlen werden halbiert, ungerade mit 3 multipliziert und plus 1, bis die Folge bei 1 landet.</p>
+
+  <label class="field">
+    Startzahl
+    <input type="number" id="start" min="1" max="1000000" step="1" value="27">
+  </label>
+
+  <button id="runBtn">Berechnen</button>
+
+  <p class="summary" id="summary"></p>
+
+  <canvas id="chart" width="600" height="280"></canvas>
+
+  <p class="sequence" id="sequence"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
