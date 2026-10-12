@@ -312,3 +312,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Sieb des Eratosthenes <br>
   ---> Obergrenze eintragen, per Einzelschritt oder automatisch durchlaufend alle Vielfachen jeder Primzahl live im Zahlenraster durchstreichen, bis nur die Primzahlen übrig bleiben
   $${\color{lightgreen}Successful}$$
+* Collatz-Folge-Visualisierer <br>
+  ---> Startzahl eingeben, die Hagelkorn-Folge (n/2 bzw. 3n+1) bis zur 1 live als Liniendiagramm zeichnen lassen, inkl. Schrittzahl und Höchstwert
+  $${\color{lightgreen}Successful}$$
