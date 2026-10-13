@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bezier-Kurven-Spielplatz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Bezier-Kurven-Spielplatz</h1>
+  <p class="hint">Die 4 Punkte per Ziehen verschieben, mit dem Regler t die De-Casteljau-Konstruktion durchlaufen.</p>
+
+  <canvas id="chart" width="600" height="400"></canvas>
+
+  <label class="field">
+    t = <span id="tValue">0.50</span>
+    <input type="range" id="tSlider" min="0" max="1" step="0.01" value="0.5">
+  </label>
+
+  <div class="controls">
+    <button id="randomizeBtn" type="button">Zufällige Punkte</button>
+    <button id="resetBtn" type="button">Zurücksetzen</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
