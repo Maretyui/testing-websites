@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mandelbrot-Set-Explorer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Mandelbrot-Set-Explorer</h1>
+  <p class="hint">Ziehen zum Verschieben, Scrollen/Pinch zum Zoomen, Doppeltipp zoomt an der Berührstelle hinein.</p>
+
+  <canvas id="chart" width="480" height="360"></canvas>
+
+  <p class="info" id="info"></p>
+
+  <div class="controls">
+    <button id="zoomInBtn" type="button">+</button>
+    <button id="zoomOutBtn" type="button">−</button>
+    <button id="resetBtn" type="button">Zurücksetzen</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
