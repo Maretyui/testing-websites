@@ -318,3 +318,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Mandelbrot-Set-Explorer <br>
   ---> Per Canvas gerenderte Mandelbrotmenge, per Ziehen verschiebbar und per Scrollen/Pinch-Geste zoombar, mit wachsender Iterationstiefe je tiefer man hineinzoomt
   $${\color{lightgreen}Successful}$$
+* Bezier-Kurven-Spielplatz <br>
+  ---> Kubische Bezier-Kurve mit 4 per Touch/Maus verschiebbaren Kontrollpunkten, inkl. Regler für t, der die De-Casteljau-Konstruktion live Schritt für Schritt zeigt
+  $${\color{lightgreen}Successful}$$
