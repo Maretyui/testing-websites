@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pfad-Finder (A*)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Pfad-Finder (A*)</h1>
+  <p class="hint">Felder antippen oder ziehen, um Wände zu setzen. Mit "Start"/"Ziel" lassen sich die Endpunkte verschieben.</p>
+
+  <div class="modes" role="group" aria-label="Zeichenmodus">
+    <button data-mode="wall" class="mode-btn active" aria-pressed="true" type="button">Wand</button>
+    <button data-mode="start" class="mode-btn" aria-pressed="false" type="button">Start</button>
+    <button data-mode="end" class="mode-btn" aria-pressed="false" type="button">Ziel</button>
+  </div>
+
+  <canvas id="grid" width="600" height="420"></canvas>
+
+  <p id="status" class="status" aria-live="polite">Bereit.</p>
+
+  <div class="controls">
+    <button id="findBtn" type="button">Pfad finden</button>
+    <button id="randomBtn" type="button">Zufällige Wände</button>
+    <button id="clearBtn" type="button">Wände löschen</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

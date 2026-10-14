@@ -321,3 +321,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Bezier-Kurven-Spielplatz <br>
   ---> Kubische Bezier-Kurve mit 4 per Touch/Maus verschiebbaren Kontrollpunkten, inkl. Regler für t, der die De-Casteljau-Konstruktion live Schritt für Schritt zeigt
   $${\color{lightgreen}Successful}$$
+* Pfad-Finder (A*) <br>
+  ---> Wände per Touch/Maus-Ziehen auf ein Gitter zeichnen, Start/Ziel verschiebbar, A*-Suche animiert Schritt für Schritt bis zum kürzesten Pfad (oder zur Meldung, dass keiner existiert)
+  $${\color{lightgreen}Successful}$$
