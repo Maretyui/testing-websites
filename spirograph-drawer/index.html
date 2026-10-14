@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spirograph-Zeichner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Spirograph-Zeichner</h1>
+  <p class="hint">Hypotrochoide: ein kleiner Kreis rollt innen in einem großen Kreis ab, ein Stift im Abstand d zeichnet die Kurve.</p>
+
+  <canvas id="chart" width="600" height="600"></canvas>
+
+  <label class="field">
+    Äußerer Radius R = <span id="RValue">220</span>
+    <input type="range" id="RSlider" min="100" max="260" step="1" value="220">
+  </label>
+  <label class="field">
+    Innerer Radius r = <span id="rValue">70</span>
+    <input type="range" id="rSlider" min="10" max="150" step="1" value="70">
+  </label>
+  <label class="field">
+    Stiftabstand d = <span id="dValue">120</span>
+    <input type="range" id="dSlider" min="0" max="200" step="1" value="120">
+  </label>
+
+  <div class="controls">
+    <button id="randomizeBtn" type="button">Zufällig</button>
+    <button id="resetBtn" type="button">Zurücksetzen</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

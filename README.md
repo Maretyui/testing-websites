@@ -324,3 +324,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Pfad-Finder (A*) <br>
   ---> Wände per Touch/Maus-Ziehen auf ein Gitter zeichnen, Start/Ziel verschiebbar, A*-Suche animiert Schritt für Schritt bis zum kürzesten Pfad (oder zur Meldung, dass keiner existiert)
   $${\color{lightgreen}Successful}$$
+* Spirograph-Zeichner <br>
+  ---> Hypotrochoide live animiert gezeichnet, Regler für äußeren/inneren Radius und Stiftabstand, automatisch auf die Canvas skaliert
+  $${\color{lightgreen}Successful}$$
