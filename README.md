@@ -327,3 +327,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Spirograph-Zeichner <br>
   ---> Hypotrochoide live animiert gezeichnet, Regler für äußeren/inneren Radius und Stiftabstand, automatisch auf die Canvas skaliert
   $${\color{lightgreen}Successful}$$
+* Zickzack-Chiffre (Rail Fence) <br>
+  ---> Transpositions-Chiffre statt Buchstaben-Ersetzung: Text wird im Zickzack über mehrere Schienen verteilt, inkl. Live-Visualisierung des Musters als Gitter
+  $${\color{lightgreen}Successful}$$

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zickzack-Chiffre (Rail Fence)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Zickzack-Chiffre (Rail Fence)</h1>
+  <p class="hint">Keine Buchstaben-Ersetzung wie bei Cäsar oder Vigenère: Der Text wird im Zickzack auf mehrere "Schienen" verteilt und dann zeilenweise wieder zusammengesetzt. Die Reihenfolge der Zeichen ändert sich, die Zeichen selbst nicht.</p>
+
+  <div class="field">
+    <label for="textInput">Text</label>
+    <textarea id="textInput" rows="3" placeholder="z. B. Hallo Welt">WIKIPEDIA</textarea>
+  </div>
+
+  <div class="row">
+    <div class="field rails-field">
+      <label for="railsInput">Schienen</label>
+      <input type="number" id="railsInput" value="3" min="2" max="10">
+    </div>
+    <div class="buttons">
+      <button id="encryptBtn" type="button">Verschlüsseln</button>
+      <button id="decryptBtn" type="button">Entschlüsseln</button>
+    </div>
+  </div>
+
+  <div class="field">
+    <label for="outputText">Ergebnis</label>
+    <textarea id="outputText" rows="3" readonly placeholder="Ergebnis erscheint hier"></textarea>
+  </div>
+
+  <h2>Zickzack-Muster</h2>
+  <p class="hint small">Zeigt, wie der aktuelle Text (oben) über die Schienen verteilt wird.</p>
+  <div class="grid-scroll">
+    <div id="zigzagGrid" class="zigzag-grid"></div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
