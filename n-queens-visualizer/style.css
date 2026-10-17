@@ -1,0 +1,161 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: #e9eaee;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  padding: 2rem 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 480px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  font-size: 1.3rem;
+  margin: 0 0 0.4rem;
+  text-align: center;
+}
+
+.hint {
+  color: #6b7280;
+  font-size: 0.85rem;
+  text-align: center;
+  margin: 0 0 1.5rem;
+}
+
+.hint.small {
+  margin: 0.75rem 0 0;
+  min-height: 1.2rem;
+}
+
+.row {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 1.1rem;
+}
+
+.field {
+  margin-bottom: 0;
+}
+
+.field label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.3rem;
+}
+
+.size-field {
+  flex: 0 0 90px;
+}
+
+.speed-field {
+  flex: 1;
+  min-width: 100px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 0.6rem 0.6rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+input[type="range"] {
+  width: 100%;
+  touch-action: manipulation;
+}
+
+input:focus {
+  outline: 2px solid #4f46e5;
+  outline-offset: 1px;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.6rem;
+  flex: 1 0 100%;
+}
+
+button {
+  flex: 1;
+  padding: 0.65rem 0.9rem;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+button:hover { background: #4338ca; }
+button:disabled {
+  background: #a5a6f0;
+  cursor: not-allowed;
+}
+
+.status {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #374151;
+  text-align: center;
+  min-height: 1.3rem;
+  margin: 0 0 1rem;
+}
+
+.status.solved { color: #16a34a; }
+.status.done { color: #d97706; }
+
+.board-wrap {
+  width: 100%;
+}
+
+.board {
+  display: grid;
+  width: 100%;
+  border: 2px solid #374151;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.board-cell {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.board-cell.light { background: #f3f4f6; }
+.board-cell.dark { background: #c7c9d1; }
+
+.board-cell.tried {
+  background: #fecaca !important;
+}
+
+.board-cell .queen {
+  width: 68%;
+  height: 68%;
+  border-radius: 50%;
+  background: #4f46e5;
+}
+
+.board-cell.tried .queen {
+  background: #dc2626;
+}
