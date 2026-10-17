@@ -1,0 +1,135 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: #e9eaee;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  padding: 2rem 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 560px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  font-size: 1.3rem;
+  margin: 0 0 0.4rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 0.95rem;
+  margin: 1.5rem 0 0.4rem;
+  color: #374151;
+}
+
+.hint {
+  color: #6b7280;
+  font-size: 0.85rem;
+  text-align: center;
+  margin: 0 0 1.5rem;
+}
+
+.hint.small {
+  margin: 0 0 0.6rem;
+  text-align: left;
+}
+
+.field {
+  margin-bottom: 1rem;
+}
+
+.field label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.3rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  resize: vertical;
+}
+
+textarea:focus {
+  outline: 2px solid #4f46e5;
+  outline-offset: 1px;
+  border-color: #4f46e5;
+}
+
+.stats {
+  font-size: 0.85rem;
+  color: #374151;
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 0.65rem 0.75rem;
+  margin: 0 0 0.5rem;
+  line-height: 1.5;
+}
+
+.table-scroll, .tree-scroll, .bits-scroll {
+  overflow-x: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.table-scroll { margin-bottom: 0.5rem; }
+.tree-scroll { padding: 0.5rem; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  min-width: 260px;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid #f0f1f3;
+}
+
+th {
+  color: #6b7280;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+td.code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+#treeSvg {
+  display: block;
+}
+
+.bits-scroll {
+  padding: 0.75rem;
+  background: #f9fafb;
+}
+
+#bitsOutput {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.8rem;
+  color: #374151;
+  white-space: pre;
+  word-break: break-all;
+}

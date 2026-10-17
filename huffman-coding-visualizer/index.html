@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Huffman-Codierung Visualisierer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Huffman-Codierung</h1>
+  <p class="hint">Text eingeben: Aus den Zeichenhäufigkeiten wird ein Huffman-Baum gebaut, jedes Zeichen bekommt einen eigenen Bitcode, und der Text wird damit tatsächlich komprimiert.</p>
+
+  <div class="field">
+    <label for="textInput">Text</label>
+    <textarea id="textInput" rows="3" placeholder="Text eingeben…">the quick brown fox jumps over the lazy dog</textarea>
+  </div>
+
+  <p class="stats" id="stats"></p>
+
+  <h2>Code-Tabelle</h2>
+  <div class="table-scroll">
+    <table id="codeTable">
+      <thead><tr><th>Zeichen</th><th>Häufigkeit</th><th>Code</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <h2>Huffman-Baum</h2>
+  <p class="hint small">0 geht nach links, 1 nach rechts; die Blätter sind die Zeichen.</p>
+  <div class="tree-scroll">
+    <svg id="treeSvg" role="img" aria-label="Huffman-Baum"></svg>
+  </div>
+
+  <h2>Kodierter Bitstrom</h2>
+  <div class="bits-scroll">
+    <code id="bitsOutput"></code>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

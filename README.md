@@ -333,3 +333,6 @@ On here, you can find testing websites. I test different things over time, and u
 * N-Damen-Problem Visualisierer <br>
   ---> Backtracking-Suche Schritt für Schritt animiert: Dame pro Zeile setzen, bei Konflikt zurückgehen und nächste Spalte probieren, bis alle Lösungen für die gewählte Brettgröße gefunden sind
   $${\color{lightgreen}Successful}$$
+* Huffman-Codierung Visualisierer <br>
+  ---> Text eingeben, Huffman-Baum aus den Zeichenhäufigkeiten aufbauen und live als SVG zeichnen, inkl. Code-Tabelle, resultierendem Bitstrom und Kompressionsrate gegenüber 8 Bit pro Zeichen
+  $${\color{lightgreen}Successful}$$
