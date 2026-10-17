@@ -330,3 +330,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Zickzack-Chiffre (Rail Fence) <br>
   ---> Transpositions-Chiffre statt Buchstaben-Ersetzung: Text wird im Zickzack über mehrere Schienen verteilt, inkl. Live-Visualisierung des Musters als Gitter
   $${\color{lightgreen}Successful}$$
+* N-Damen-Problem Visualisierer <br>
+  ---> Backtracking-Suche Schritt für Schritt animiert: Dame pro Zeile setzen, bei Konflikt zurückgehen und nächste Spalte probieren, bis alle Lösungen für die gewählte Brettgröße gefunden sind
+  $${\color{lightgreen}Successful}$$
