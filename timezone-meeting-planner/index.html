@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meeting-Zeitzonen-Planer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Meeting-Zeitzonen-Planer</h1>
+  <p class="hint">Einen Meeting-Zeitpunkt wählen und live sehen, wie spät es dabei in jeder hinzugefügten Stadt ist — inklusive Einfärbung nach Arbeits-/Rand-/Schlafzeit.</p>
+
+  <div class="row">
+    <div class="field time-field">
+      <label for="hourInput">Meeting-Zeit (UTC)</label>
+      <input type="range" id="hourInput" min="0" max="1439" step="15" value="840">
+      <div class="time-readout" id="timeReadout" role="status" aria-live="polite">14:00 UTC</div>
+    </div>
+  </div>
+
+  <div class="row add-row">
+    <select id="citySelect" aria-label="Stadt auswählen"></select>
+    <button id="addBtn" type="button">Hinzufügen</button>
+  </div>
+
+  <div class="legend">
+    <span class="dot work"></span> Arbeitszeit (9–18)
+    <span class="dot ok"></span> Grenzwertig (7–9, 18–22)
+    <span class="dot sleep"></span> Nachtzeit (22–7)
+  </div>
+
+  <div id="cityList" class="city-list" aria-label="Ausgewählte Städte"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -336,3 +336,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Huffman-Codierung Visualisierer <br>
   ---> Text eingeben, Huffman-Baum aus den Zeichenhäufigkeiten aufbauen und live als SVG zeichnen, inkl. Code-Tabelle, resultierendem Bitstrom und Kompressionsrate gegenüber 8 Bit pro Zeichen
   $${\color{lightgreen}Successful}$$
+* Meeting-Zeitzonen-Planer <br>
+  ---> Meeting-Uhrzeit per Schieberegler wählen, live sehen wie spät es dabei in jeder hinzugefügten Stadt ist, inkl. Einfärbung nach Arbeits-/Rand-/Schlafzeit per Intl.DateTimeFormat
+  $${\color{lightgreen}Successful}$$
