@@ -339,3 +339,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Meeting-Zeitzonen-Planer <br>
   ---> Meeting-Uhrzeit per Schieberegler wählen, live sehen wie spät es dabei in jeder hinzugefügten Stadt ist, inkl. Einfärbung nach Arbeits-/Rand-/Schlafzeit per Intl.DateTimeFormat
   $${\color{lightgreen}Successful}$$
+* Schachfeld-Koordinaten-Trainer <br>
+  ---> Zufällig gesuchte Feldkoordinate (z.B. e4) so schnell wie möglich auf einem koordinatenlosen Brett antippen, mit Serienzähler und laufendem Ø der Reaktionszeit
+  $${\color{lightgreen}Successful}$$
