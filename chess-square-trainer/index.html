@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schachfeld-Koordinaten-Trainer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Schachfeld-Koordinaten-Trainer</h1>
+  <p class="hint">Tippe so schnell wie möglich auf das gesuchte Feld. Die Koordinaten blendet das Brett dabei bewusst aus.</p>
+
+  <div class="stats" role="status" aria-live="polite">
+    <div class="stat"><span class="stat-value" id="scoreValue">0</span><span class="stat-label">Richtig</span></div>
+    <div class="stat"><span class="stat-value" id="streakValue">0</span><span class="stat-label">Serie</span></div>
+    <div class="stat"><span class="stat-value" id="avgValue">–</span><span class="stat-label">Ø Zeit</span></div>
+  </div>
+
+  <p class="target">Gesucht: <strong id="targetSquare">–</strong></p>
+
+  <div class="board-wrap">
+    <div id="board" class="board" role="img" aria-label="Leeres Schachbrett ohne Koordinaten"></div>
+  </div>
+
+  <button id="resetBtn" type="button">Neu starten</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
