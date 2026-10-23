@@ -342,3 +342,6 @@ On here, you can find testing websites. I test different things over time, and u
 * Schachfeld-Koordinaten-Trainer <br>
   ---> Zufällig gesuchte Feldkoordinate (z.B. e4) so schnell wie möglich auf einem koordinatenlosen Brett antippen, mit Serienzähler und laufendem Ø der Reaktionszeit
   $${\color{lightgreen}Successful}$$
+* Einheitskreis-Explorer <br>
+  ---> Punkt per Touch/Maus auf dem Einheitskreis ziehen oder Schieberegler nutzen, Sinus/Kosinus/Tangens live als Zahlenwert und als Strecken im Kreis dargestellt
+  $${\color{lightgreen}Successful}$$

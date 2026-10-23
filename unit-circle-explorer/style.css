@@ -1,0 +1,118 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  justify-content: center;
+  background: #e9eaee;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  padding: 2rem 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.3rem;
+  margin: 0 0 0.4rem;
+}
+
+.hint {
+  color: #6b7280;
+  font-size: 0.85rem;
+  margin: 0 0 1.25rem;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  margin: 0 auto 1.25rem;
+  background: #f8f9fc;
+  border-radius: 10px;
+  touch-action: none;
+  cursor: grab;
+}
+
+canvas:active { cursor: grabbing; }
+
+#angleSlider {
+  width: 100%;
+  margin-bottom: 1.25rem;
+  touch-action: manipulation;
+}
+
+#angleSlider:focus-visible {
+  outline: 2px solid #4f46e5;
+  outline-offset: 2px;
+}
+
+.readout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0.5rem 1rem;
+  margin-bottom: 1.25rem;
+  text-align: left;
+}
+
+.readout-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+}
+
+.readout-label {
+  font-size: 0.78rem;
+  color: #6b7280;
+}
+
+.readout-value {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #111827;
+}
+
+.readout-value.sin { color: #dc2626; }
+.readout-value.cos { color: #2563eb; }
+.readout-value.tan { color: #16a34a; }
+
+.presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.preset-btn {
+  padding: 0.45rem 0.8rem;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.preset-btn:hover { background: #4338ca; }
+
+.preset-btn:focus-visible {
+  outline: 2px solid #4f46e5;
+  outline-offset: 2px;
+}
