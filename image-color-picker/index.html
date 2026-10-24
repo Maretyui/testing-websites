@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Color Picker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Image Color Picker</h1>
+  <p class="hint">Pick a photo, then tap or click anywhere on it to read that pixel's color. Everything stays on this device.</p>
+
+  <label class="file-field" for="fileInput">
+    <span id="fileLabel">Choose an image…</span>
+    <input type="file" id="fileInput" accept="image/*">
+  </label>
+
+  <div class="canvas-wrap" id="canvasWrap" hidden>
+    <canvas id="picker"></canvas>
+    <div class="crosshair" id="crosshair" hidden></div>
+  </div>
+
+  <div class="current" id="current" hidden>
+    <div class="current-swatch" id="currentSwatch"></div>
+    <div class="current-values">
+      <code id="currentHex">#000000</code>
+      <small id="currentRgb">rgb(0, 0, 0)</small>
+    </div>
+    <button type="button" id="copyCurrent">Copy hex</button>
+  </div>
+
+  <div class="history" id="history"></div>
+  <p class="copy-hint" id="emptyHint">Picked colors will collect here — click any swatch to copy it again.</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
