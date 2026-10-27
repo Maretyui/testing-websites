@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tower of Hanoi Visualizer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Tower of Hanoi Visualizer</h1>
+  <p class="hint">Move the whole stack from peg A to peg C, one disk at a time, never placing a bigger disk on a smaller one. Play it yourself by dragging disks, or watch the minimal recursive solution step through itself.</p>
+
+  <div class="field-row">
+    <label for="diskCount">Disks</label>
+    <input type="range" id="diskCount" min="3" max="8" step="1" value="5">
+    <span id="diskCountValue">5</span>
+  </div>
+
+  <div class="pegs" id="pegs">
+    <div class="peg" data-peg="0"><div class="peg-rod"></div><div class="peg-base"></div><div class="peg-label">A</div></div>
+    <div class="peg" data-peg="1"><div class="peg-rod"></div><div class="peg-base"></div><div class="peg-label">B</div></div>
+    <div class="peg" data-peg="2"><div class="peg-rod"></div><div class="peg-base"></div><div class="peg-label">C</div></div>
+  </div>
+
+  <p class="status" id="status">0 moves. Minimum possible: 31.</p>
+
+  <div class="controls">
+    <button type="button" id="resetBtn">Reset</button>
+    <button type="button" id="solveBtn">Auto-solve</button>
+    <button type="button" id="pauseBtn" hidden>Pause</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
