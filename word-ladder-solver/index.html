@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Word Ladder Solver</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Word Ladder Solver</h1>
+  <p class="hint">Enter a start and end word of the same length. Each rung changes exactly one letter and must land on a real word from the built-in word list — the solver finds the shortest possible chain with a breadth-first search.</p>
+
+  <form id="form">
+    <div class="field">
+      <label for="startWord">Start word</label>
+      <input type="text" id="startWord" value="cold" autocomplete="off" autocapitalize="off" spellcheck="false">
+    </div>
+    <div class="field">
+      <label for="endWord">End word</label>
+      <input type="text" id="endWord" value="warm" autocomplete="off" autocapitalize="off" spellcheck="false">
+    </div>
+    <button type="submit">Solve</button>
+  </form>
+
+  <p class="status" id="status"></p>
+  <ol class="ladder" id="ladder"></ol>
+</div>
+<script src="words.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
