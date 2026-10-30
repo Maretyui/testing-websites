@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Convex Hull Visualizer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Convex Hull Visualizer</h1>
+  <p class="hint">Tap or click anywhere on the canvas to drop points. "Compute Hull" wraps the smallest convex polygon around all of them using a Graham scan — sort by angle from the lowest point, then walk the rest keeping only left turns.</p>
+
+  <canvas id="canvas"></canvas>
+
+  <div class="controls">
+    <button type="button" id="hullBtn">Compute Hull</button>
+    <button type="button" id="randomBtn">Random Points</button>
+    <button type="button" id="clearBtn">Clear</button>
+  </div>
+
+  <p class="status" id="status">0 points</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
