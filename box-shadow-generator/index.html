@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Box-Shadow-Generator</title>
+<link rel="stylesheet" href="style.css">
+<meta http-equiv="Content-Security-Policy" content="script-src 'self'">
+</head>
+<body>
+<div class="container">
+  <h1>Box-Shadow-Generator</h1>
+  <p class="hint">Rein clientseitig, nichts wird irgendwohin gesendet.</p>
+
+  <div class="preview-stage">
+    <div class="preview-box" id="previewBox"></div>
+  </div>
+
+  <div class="row">
+    <label for="offsetX">Versatz X</label>
+    <input type="range" id="offsetX" min="-50" max="50" value="0">
+    <span class="value" id="offsetXValue">0px</span>
+  </div>
+
+  <div class="row">
+    <label for="offsetY">Versatz Y</label>
+    <input type="range" id="offsetY" min="-50" max="50" value="10">
+    <span class="value" id="offsetYValue">10px</span>
+  </div>
+
+  <div class="row">
+    <label for="blur">Unschärfe</label>
+    <input type="range" id="blur" min="0" max="100" value="20">
+    <span class="value" id="blurValue">20px</span>
+  </div>
+
+  <div class="row">
+    <label for="spread">Ausdehnung</label>
+    <input type="range" id="spread" min="-50" max="50" value="0">
+    <span class="value" id="spreadValue">0px</span>
+  </div>
+
+  <div class="row">
+    <label for="opacity">Deckkraft</label>
+    <input type="range" id="opacity" min="0" max="100" value="35">
+    <span class="value" id="opacityValue">35%</span>
+  </div>
+
+  <div class="row color-row">
+    <label for="color">Farbe</label>
+    <input type="color" id="color" value="#000000">
+    <label class="inset-toggle" for="inset">
+      <input type="checkbox" id="inset">
+      Innenschatten
+    </label>
+  </div>
+
+  <div class="stop-actions">
+    <button id="randomizeBtn" class="secondary-btn" type="button">Zufällig</button>
+  </div>
+
+  <div class="output-row">
+    <textarea id="code" readonly rows="2"></textarea>
+    <button id="copyBtn" type="button">Kopieren</button>
+  </div>
+  <p class="copied" id="copiedMsg"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
